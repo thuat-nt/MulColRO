@@ -83,3 +83,7 @@ C {devices/lab_pin.sym} 370 -60 0 0 {name=p41 sig_type=std_logic lab=REG2}
 C {devices/lab_pin.sym} 370 0 0 0 {name=p42 sig_type=std_logic lab=REG0}
 C {mux2_1/mux2_1.sym} 1030 -80 0 0 {name=x3}
 C {devices/lab_pin.sym} 880 -100 0 0 {name=p1 sig_type=std_logic lab=REG6}
+C {devices/ipin.sym} -170 -200 0 0 {name=p10 lab=GROUND}
+C {devices/lab_pin.sym} -170 -200 2 0 {name=p54 sig_type=std_logic lab=GROUND}
+C {devices/ipin.sym} -170 -250 0 0 {name=p55 lab=VDD}
+C {devices/lab_pin.sym} -170 -250 2 0 {name=p56 sig_type=std_logic lab=VDD}
