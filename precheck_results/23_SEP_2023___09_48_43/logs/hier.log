@@ -1,0 +1,6 @@
+BEGIN: Sat 23 Sep 2023 09:49:59 AM UTC
+[INFO] Changing from /run/media/thuat/build/cmos/MulColRO/gds/user_analog_project_wrapper.gds
+	to /run/media/thuat/build/cmos/MulColRO/precheck_results/23_SEP_2023___09_48_43/tmp/layout.txt
+Hierarchy check for user_analog_project_wrapper passed.
+END: Sat 23 Sep 2023 09:50:01 AM UTC
+Runtime: 0:00:02 (hh:mm:ss)

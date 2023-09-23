@@ -1,0 +1,5 @@
+ERROR: In /home/thuat/mpw_precheck/checks/tech-files/sky130A_mr.drc: 'source': Stream has unknown format: /run/media/thuat/build/cmos/MulColRO/gds/user_analog_project_wrapper.gds in Layout::read
+ERROR: 'source': Stream has unknown format: /run/media/thuat/build/cmos/MulColRO/gds/user_analog_project_wrapper.gds in Layout::read in Executable::execute
+  /home/thuat/mpw_precheck/checks/tech-files/sky130A_mr.drc:28:in `execute'
+  :/built-in-macros/drc_interpreters.lym:27:in `instance_eval'
+  :/built-in-macros/drc_interpreters.lym:27:in `execute'

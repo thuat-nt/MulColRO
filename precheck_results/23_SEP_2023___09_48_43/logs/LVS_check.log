@@ -1,0 +1,94 @@
+
+TOP SOURCE: user_analog_project_wrapper
+SOURCE FILE(S): /run/media/thuat/build/cmos/MulColRO/xschem/user_analog_project_wrapper.spice
+ /run/media/thuat/build/cmos/MulColRO/dependencies/pdks/sky130A/libs.ref/sky130_fd_sc_hvl/spice/*.spice
+TOP LAYOUT: user_analog_project_wrapper
+LAYOUT FILE: /run/media/thuat/build/cmos/MulColRO/gds/user_analog_project_wrapper.gds
+EXTRACT_FLATGLOB: *sky130_fd_pr__*[A-Z]*
+EXTRACT_ABSTRACT: *__fill_*
+ *__fakediode_*
+ *__tapvpwrvgnd_*
+LVS_FLATTEN: 
+LVS_NOFLATTEN: 
+LVS_IGNORE: 
+WORK_ROOT   : /run/media/thuat/build/cmos/MulColRO/precheck_results/23_SEP_2023___09_48_43/tmp
+LOG_ROOT    : /run/media/thuat/build/cmos/MulColRO/precheck_results/23_SEP_2023___09_48_43/logs
+SIGNOFF_ROOT: /run/media/thuat/build/cmos/MulColRO/precheck_results/23_SEP_2023___09_48_43/outputs/reports
+ 
+Running hierarchical comparison between verilog and layout...
+No verilog files...
+ERROR: /run/media/thuat/build/cmos/MulColRO/precheck_results/23_SEP_2023___09_48_43/tmp/gds2txt.py:15: Stream has unknown format: /run/media/thuat/build/cmos/MulColRO/gds/user_analog_project_wrapper.gds in Layout.read
+  /run/media/thuat/build/cmos/MulColRO/precheck_results/23_SEP_2023___09_48_43/tmp/gds2txt.py:15 (class RuntimeError)
+[INFO] Changing from /run/media/thuat/build/cmos/MulColRO/gds/user_analog_project_wrapper.gds
+	to /run/media/thuat/build/cmos/MulColRO/precheck_results/23_SEP_2023___09_48_43/tmp/layout.txt
+gzip: /run/media/thuat/build/cmos/MulColRO/precheck_results/23_SEP_2023___09_48_43/tmp/layout.txt: No such file or directory
+gzip: /run/media/thuat/build/cmos/MulColRO/precheck_results/23_SEP_2023___09_48_43/tmp/layout.txt.gz: No such file or directory
+gzip: /run/media/thuat/build/cmos/MulColRO/precheck_results/23_SEP_2023___09_48_43/tmp/layout.txt.gz: No such file or directory
+Hierarchy check for user_analog_project_wrapper passed.
+ 
+Running soft connection check on layout...
+WARNING: Tech files do not match:
+grep: /run/media/thuat/build/cmos/MulColRO/dependencies/pdks/sky130A/libs.tech/magic/sky130A.tech: No such file or directory
+/home/thuat/mpw_precheck/checks/be_checks//tech/sky130A/sky130A.tech: version 1.0.393-0-ge6f9c88
+Results may be incorrect. Contact efabless to update the soft connection rules.
+WORK_ROOT   : /run/media/thuat/build/cmos/MulColRO/precheck_results/23_SEP_2023___09_48_43/tmp
+LOG_ROOT    : /run/media/thuat/build/cmos/MulColRO/precheck_results/23_SEP_2023___09_48_43/logs
+SIGNOFF_ROOT: /run/media/thuat/build/cmos/MulColRO/precheck_results/23_SEP_2023___09_48_43/outputs/reports
+TOP: user_analog_project_wrapper
+LAYOUT: /run/media/thuat/build/cmos/MulColRO/gds/user_analog_project_wrapper.gds
+EXTRACT_FLATGLOB: *sky130_fd_pr__*[A-Z]*
+EXTRACT_ABSTRACT: *__fill_*
+ *__fakediode_*
+ *__tapvpwrvgnd_*
+Extracting layout with well in background process. See /run/media/thuat/build/cmos/MulColRO/precheck_results/23_SEP_2023___09_48_43/tmp/ext.log.
+Extracting layout without well in background process. See /run/media/thuat/build/cmos/MulColRO/precheck_results/23_SEP_2023___09_48_43/tmp/nowell.ext.log.
+sed: can't read /run/media/thuat/build/cmos/MulColRO/precheck_results/23_SEP_2023___09_48_43/tmp/ext/user_analog_project_wrapper.gds.spice: No such file or directory
+awk: /home/thuat/mpw_precheck/checks/be_checks//scripts/remove_disconnect.awk:29: fatal: cannot open file `/run/media/thuat/build/cmos/MulColRO/precheck_results/23_SEP_2023___09_48_43/tmp/nowell.ext/user_analog_project_wrapper.gds.spice' for reading (No such file or directory)
+Extraction error: see /run/media/thuat/build/cmos/MulColRO/precheck_results/23_SEP_2023___09_48_43/logs/ext.log
+and/or /run/media/thuat/build/cmos/MulColRO/precheck_results/23_SEP_2023___09_48_43/logs/nowell.ext.log
+ 
+Running LVS...
+TOP SOURCE: user_analog_project_wrapper
+SOURCE FILE(S): /run/media/thuat/build/cmos/MulColRO/xschem/user_analog_project_wrapper.spice
+ /run/media/thuat/build/cmos/MulColRO/dependencies/pdks/sky130A/libs.ref/sky130_fd_sc_hvl/spice/*.spice
+TOP LAYOUT: user_analog_project_wrapper
+LAYOUT FILE: 
+EXTRACT_FLATGLOB: *sky130_fd_pr__*[A-Z]*
+EXTRACT_ABSTRACT: *__fill_*
+ *__fakediode_*
+ *__tapvpwrvgnd_*
+LVS_FLATTEN: 
+LVS_NOFLATTEN: 
+LVS_IGNORE: 
+WORK_ROOT   : /run/media/thuat/build/cmos/MulColRO/precheck_results/23_SEP_2023___09_48_43/tmp
+LOG_ROOT    : /run/media/thuat/build/cmos/MulColRO/precheck_results/23_SEP_2023___09_48_43/logs
+SIGNOFF_ROOT: /run/media/thuat/build/cmos/MulColRO/precheck_results/23_SEP_2023___09_48_43/outputs/reports
+Error: missing /run/media/thuat/build/cmos/MulColRO/precheck_results/23_SEP_2023___09_48_43/tmp/ext/user_analog_project_wrapper.gds.spice
+Specify gds_file to create
+usage: run_full_lvs [--noextract] [lvs_config_file [top_source [top_layout [layout_file]]]]
+DESIGN NAME: user_analog_project_wrapper
+WORK_ROOT   : /run/media/thuat/build/cmos/MulColRO/precheck_results/23_SEP_2023___09_48_43/tmp
+LOG_ROOT    : /run/media/thuat/build/cmos/MulColRO/precheck_results/23_SEP_2023___09_48_43/logs
+SIGNOFF_ROOT: /run/media/thuat/build/cmos/MulColRO/precheck_results/23_SEP_2023___09_48_43/outputs/reports
+ 
+Running CVC...
+Could not create cdl file from /run/media/thuat/build/cmos/MulColRO/precheck_results/23_SEP_2023___09_48_43/tmp/ext/user_analog_project_wrapper.gds.spice
+
+Soft check result:
+tail: cannot open ‘/run/media/thuat/build/cmos/MulColRO/precheck_results/23_SEP_2023___09_48_43/logs/soft.log’ for reading: No such file or directory
+Soft check problem: check the following files
+/run/media/thuat/build/cmos/MulColRO/precheck_results/23_SEP_2023___09_48_43/logs/ext.log
+/run/media/thuat/build/cmos/MulColRO/precheck_results/23_SEP_2023___09_48_43/logs/nowell.ext.log
+/run/media/thuat/build/cmos/MulColRO/precheck_results/23_SEP_2023___09_48_43/logs/soft.log
+/run/media/thuat/build/cmos/MulColRO/precheck_results/23_SEP_2023___09_48_43/outputs/reports/soft.report
+
+LVS result:
+tail: cannot open ‘/run/media/thuat/build/cmos/MulColRO/precheck_results/23_SEP_2023___09_48_43/logs/lvs.log’ for reading: No such file or directory
+LVS problem: check the following files
+/run/media/thuat/build/cmos/MulColRO/precheck_results/23_SEP_2023___09_48_43/logs/ext.log
+/run/media/thuat/build/cmos/MulColRO/precheck_results/23_SEP_2023___09_48_43/logs/lvs.log
+/run/media/thuat/build/cmos/MulColRO/precheck_results/23_SEP_2023___09_48_43/outputs/reports/lvs.report
+
+Runtime: 0:00:02 (hh:mm:ss)
+
+WARNING: possible errors SOFT 2 LVS 2 CVC 2

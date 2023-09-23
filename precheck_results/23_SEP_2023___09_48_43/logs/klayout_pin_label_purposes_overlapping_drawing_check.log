@@ -1,0 +1,7 @@
+Running pin_label_purposes_overlapping_drawing.rb.drc on file=/run/media/thuat/build/cmos/MulColRO/gds/user_analog_project_wrapper.gds, topcell=user_analog_project_wrapper, output to /run/media/thuat/build/cmos/MulColRO/precheck_results/23_SEP_2023___09_48_43/outputs/reports/klayout_pin_label_purposes_overlapping_drawing_check.xml
+  deep:true tiled:false threads:12
+ERROR: In /home/thuat/mpw_precheck/checks/drc_checks/klayout/pin_label_purposes_overlapping_drawing.rb.drc: 'source': Stream has unknown format: /run/media/thuat/build/cmos/MulColRO/gds/user_analog_project_wrapper.gds in Layout::read
+ERROR: 'source': Stream has unknown format: /run/media/thuat/build/cmos/MulColRO/gds/user_analog_project_wrapper.gds in Layout::read in Executable::execute
+  /home/thuat/mpw_precheck/checks/drc_checks/klayout/pin_label_purposes_overlapping_drawing.rb.drc:70:in `execute'
+  :/built-in-macros/drc_interpreters.lym:27:in `instance_eval'
+  :/built-in-macros/drc_interpreters.lym:27:in `execute'
