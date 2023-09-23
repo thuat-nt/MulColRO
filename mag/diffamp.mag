@@ -1,7 +1,7 @@
 magic
 tech sky130A
 magscale 1 2
-timestamp 1695438069
+timestamp 1695461801
 << locali >>
 rect 28544 3482 30676 3802
 rect 28544 1906 28840 3482
@@ -65,7 +65,12 @@ rect 28534 1718 30770 1906
 rect 43102 756 44058 890
 rect 43102 300 43288 756
 rect 43902 300 44058 756
+rect 0 0 200 200
 rect 43102 120 44058 300
+rect 0 -400 200 -200
+rect 0 -800 200 -600
+rect 0 -1200 200 -1000
+rect 0 -1600 200 -1400
 rect 28606 -2464 30536 -2376
 rect 28606 -2788 30052 -2464
 rect 30392 -2788 30536 -2464
@@ -1743,4 +1748,9 @@ rlabel metal2 28544 1668 58134 4684 1 VDD
 port 5 nsew
 rlabel metal2 31210 -31714 60790 -28128 1 GROUND
 port 6 nsew
+flabel metal1 0 0 200 200 0 FreeSans 256 0 0 0 PCAS
+flabel metal1 0 -400 200 -200 0 FreeSans 256 0 0 0 OUT
+flabel metal1 0 -800 200 -600 0 FreeSans 256 0 0 0 REF
+flabel metal1 0 -1200 200 -1000 0 FreeSans 256 0 0 0 PIX
+flabel metal1 0 -1600 200 -1400 0 FreeSans 256 0 0 0 GM_BIAS
 << end >>

@@ -1,7 +1,7 @@
 magic
 tech sky130A
 magscale 1 2
-timestamp 1695446130
+timestamp 1695461801
 << locali >>
 rect 878 9600 11320 10390
 rect 878 9528 2036 9600
@@ -67,6 +67,8 @@ rect 9214 6262 9798 6290
 rect 9214 6200 9346 6262
 rect 9638 6200 9798 6262
 rect 9214 6190 9798 6200
+rect 0 0 200 200
+rect 0 -400 200 -200
 << via1 >>
 rect 2032 9528 2036 9600
 rect 2036 9528 2212 9600
@@ -183,4 +185,6 @@ rlabel locali 2212 9386 11320 10390 1 VDD
 port 3 nsew
 rlabel locali 990 5142 11238 6164 1 GROUND
 port 2 nsew
+flabel metal1 0 0 200 200 0 FreeSans 256 0 0 0 Vtune
+flabel metal1 0 -400 200 -200 0 FreeSans 256 0 0 0 Ib
 << end >>

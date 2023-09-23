@@ -1,7 +1,15 @@
 magic
 tech sky130A
 magscale 1 2
-timestamp 1695455187
+timestamp 1695461801
+<< error_s >>
+rect 9160 1430 9280 1450
+rect 9466 1432 9706 1984
+rect 9466 1430 9756 1432
+rect 9154 1402 9308 1422
+rect 9466 1404 9706 1430
+rect 9466 1402 9784 1404
+rect 9466 1346 9706 1402
 << locali >>
 rect 2 10670 3680 10764
 rect 2 10298 2458 10670
@@ -252,10 +260,18 @@ rect 34 810 3470 1210
 rect 5112 808 8548 1210
 rect 5112 800 5802 808
 rect 6520 800 8548 808
+use not  not_0
+timestamp 1695461801
+transform 1 0 8166 0 1 1148
+box 0 -578 1868 990
+use not  not_1
+timestamp 1695461801
+transform 1 0 8642 0 1 1148
+box 0 -578 1868 990
 use not  x1
-timestamp 1695395215
+timestamp 1695461801
 transform -1 0 5462 0 1 4624
-box 476 -578 1868 990
+box 0 -578 1868 990
 use sky130_fd_pr__nfet_01v8_lvt_4833E6  XM1
 timestamp 1695367880
 transform 1 0 6830 0 1 4780
@@ -276,4 +292,8 @@ port 4 nsew
 rlabel space -114 -950 8530 238 1 GROUND
 port 5 nsew
 rlabel metal1 2416 -750 3238 -114 1 GROUND
+flabel metal1 0 0 200 200 0 FreeSans 256 0 0 0 toggle
+port 0 nsew
+flabel metal1 0 -400 200 -200 0 FreeSans 256 0 0 0 out
+flabel metal1 0 -800 200 -600 0 FreeSans 256 0 0 0 in
 << end >>

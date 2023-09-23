@@ -1,7 +1,7 @@
 magic
 tech sky130A
 magscale 1 2
-timestamp 1695442520
+timestamp 1695461801
 << pwell >>
 rect 10708 4824 10888 4998
 << nmoslvt >>
@@ -365,6 +365,10 @@ rect 12922 1644 13332 1672
 rect 12922 1370 12950 1644
 rect 13302 1370 13332 1644
 rect 12922 1348 13332 1370
+rect 0 0 200 200
+rect 0 -400 200 -200
+rect 0 -800 200 -600
+rect 0 -1200 200 -1000
 << via1 >>
 rect 14840 8778 15112 8992
 rect 7132 7994 7300 8164
@@ -951,4 +955,8 @@ rlabel locali 6276 1244 15318 1756 1 GROUND
 port 5 nsew
 rlabel locali 7334 8482 18966 9014 1 VDD
 port 4 nsew
+flabel metal1 0 0 200 200 0 FreeSans 256 0 0 0 opbias
+flabel metal1 0 -400 200 -200 0 FreeSans 256 0 0 0 inp
+flabel metal1 0 -800 200 -600 0 FreeSans 256 0 0 0 inn
+flabel metal1 0 -1200 200 -1000 0 FreeSans 256 0 0 0 out
 << end >>
