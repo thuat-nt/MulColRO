@@ -1,0 +1,22 @@
+magic
+tech sky130A
+timestamp 1695459245
+<< error_s >>
+rect 28956 14095 28973 14119
+use diffamp  x1
+timestamp 1695438069
+transform 1 0 0 0 1 14285
+box 13700 -15857 30592 2342
+use integrator  x2
+timestamp 1695459245
+transform 1 0 28984 0 1 2100
+box 7291 -5284 28629 18146
+use mux2_1  x3
+timestamp 1695432261
+transform 1 0 82011 0 1 900
+box 2100 4211 10436 16746
+use buffer  x7
+timestamp 1695443368
+transform 1 0 72608 0 1 700
+box 0 -400 9644 5407
+<< end >>
