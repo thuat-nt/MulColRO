@@ -1,7 +1,7 @@
 magic
 tech sky130A
 magscale 1 2
-timestamp 1695461801
+timestamp 1695698273
 << metal3 >>
 rect -56 31 56 88
 rect -56 -88 56 -31
