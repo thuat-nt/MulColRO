@@ -1,6 +1,6 @@
 magic
 tech sky130A
-timestamp 1695565527
+timestamp 1695803481
 << metal1 >>
 rect 9308 15285 9872 15369
 rect 2597 15169 2704 15195
@@ -118,11 +118,11 @@ timestamp 1695565421
 transform 0 -1 3093 1 0 6035
 box 238 -289 934 495
 use switch  x5
-timestamp 1695565421
+timestamp 1695803481
 transform 0 1 4161 -1 0 14889
 box -57 -475 4321 5709
 use switch  x6
-timestamp 1695565421
+timestamp 1695803481
 transform 0 1 4170 -1 0 10392
 box -57 -475 4321 5709
 << labels >>

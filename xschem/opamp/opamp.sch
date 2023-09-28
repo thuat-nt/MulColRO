@@ -25,14 +25,6 @@ N 1240 -650 1240 -610 {
 lab=#net2}
 N 1450 -650 1450 -610 {
 lab=#net2}
-N 1240 -580 1320 -580 {
-lab=#net2}
-N 1320 -650 1320 -580 {
-lab=#net2}
-N 1350 -580 1450 -580 {
-lab=#net2}
-N 1350 -650 1350 -580 {
-lab=#net2}
 N 1240 -550 1240 -210 {
 lab=#net3}
 N 1450 -550 1450 -210 {
@@ -167,20 +159,6 @@ nf=5 mult=1
 model=pfet_01v8_lvt
 spiceprefix=X
 }
-C {sky130_fd_pr/pfet_01v8_lvt.sym} 1220 -580 0 0 {name=M14
-L=3
-W=15
-nf=3 mult=1
-model=pfet_01v8_lvt
-spiceprefix=X
-}
-C {sky130_fd_pr/pfet_01v8_lvt.sym} 1470 -580 0 1 {name=M15
-L=3
-W=15
-nf=3 mult=1
-model=pfet_01v8_lvt
-spiceprefix=X
-}
 C {sky130_fd_pr/nfet3_01v8_lvt.sym} 1850 -370 0 0 {name=M17
 L=3
 W=80
@@ -219,5 +197,21 @@ L=3
 W=8
 nf=1 mult=1
 model=nfet_01v8_lvt
+spiceprefix=X
+}
+C {sky130_fd_pr/pfet3_01v8_lvt.sym} 1220 -580 0 0 {name=M1
+L=3
+W=15
+body=VDD
+nf=3 mult=1
+model=pfet_01v8_lvt
+spiceprefix=X
+}
+C {sky130_fd_pr/pfet3_01v8_lvt.sym} 1470 -580 0 1 {name=M6
+L=3
+W=15
+body=VDD
+nf=3 mult=1
+model=pfet_01v8_lvt
 spiceprefix=X
 }
