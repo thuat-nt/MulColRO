@@ -1,4 +1,0 @@
-ERROR: Stream has unknown format: /run/media/thuat/build/cmos/MulColRO/gds/user_analog_project_wrapper.gds in Layout::read
-  /home/thuat/mpw_precheck/checks/xor_check/gds_size.rb:59:in `read'
-  /home/thuat/mpw_precheck/checks/xor_check/gds_size.rb:59:in `<main>'
-Reading file /run/media/thuat/build/cmos/MulColRO/gds/user_analog_project_wrapper.gds for cell user_analog_project_wrapper
