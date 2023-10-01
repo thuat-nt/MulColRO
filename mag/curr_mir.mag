@@ -1,7 +1,7 @@
 magic
 tech sky130A
 magscale 1 2
-timestamp 1695908076
+timestamp 1696147843
 << locali >>
 rect 878 9600 11320 10390
 rect 878 9528 2036 9600
@@ -175,15 +175,15 @@ rect 6848 6526 7356 7662
 rect 6848 6404 6968 6526
 rect 7216 6404 7356 6526
 rect 6848 6362 7356 6404
-use sky130_fd_pr__nfet_01v8_lvt_T4BG7Y  XM1
+use sky130_fd_pr__nfet_01v8_lvt_T4BG7Y  XM1 ~/ColRO/mag
 timestamp 1695195131
 transform 0 1 6124 -1 0 6460
 box -396 -5210 396 5210
-use sky130_fd_pr__nfet_01v8_lvt_6TMDZ9  XM2
+use sky130_fd_pr__nfet_01v8_lvt_6TMDZ9  XM2 ~/ColRO/mag
 timestamp 1695195131
 transform 1 0 7230 0 1 7704
 box -2696 -610 2696 610
-use sky130_fd_pr__pfet_01v8_lvt_B5Z988  XM10
+use sky130_fd_pr__pfet_01v8_lvt_B5Z988  XM10 ~/ColRO/mag
 timestamp 1695195131
 transform 1 0 2134 0 1 8267
 box -1196 -1219 1196 1219

@@ -98,8 +98,8 @@ C {devices/ipin.sym} 80 180 3 0 {name=p5 lab=opbias}
 C {sky130_fd_pr/cap_mim_m3_1.sym} 80 -130 3 0 {name=C2 model=cap_mim_m3_1 W=50 L=50 MF=1 spiceprefix=X}
 C {devices/ipin.sym} -140 -60 0 0 {name=p6 lab=sw1}
 C {devices/ipin.sym} -140 -160 0 0 {name=p8 lab=sw2}
-C {switch/switch.sym} 0 -120 0 0 {name=x1}
-C {switch/switch.sym} 0 -20 0 0 {name=x2}
+C {switch/switch.sym} 0 -120 0 0 {name=x9}
+C {switch/switch.sym} 0 -20 0 0 {name=x1}
 C {current_mirror/curr_mir.sym} -480 270 0 0 {name=x3}
 C {opamp/opamp.sym} 100 -60 0 0 {name=x4}
 C {devices/ipin.sym} -140 -280 0 0 {name=p7 lab=rst}
@@ -108,10 +108,10 @@ C {devices/ipin.sym} -360 400 0 0 {name=p9 lab=en
 }
 C {switch/switch.sym} 0 390 3 0 {name=x6}
 C {not/not.sym} -120 150 3 0 {name=x7}
-C {switch/switch.sym} -200 60 2 1 {name=x8}
+C {switch/switch.sym} -200 60 2 1 {name=x2}
 C {sky130_fd_pr/cap_mim_m3_1.sym} 80 -380 3 0 {name=C3 model=cap_mim_m3_1 W=50 L=50 MF=1 spiceprefix=X}
-C {switch/switch.sym} 0 -370 0 0 {name=x9}
+C {switch/switch.sym} 0 -370 0 0 {name=x10}
 C {sky130_fd_pr/cap_mim_m3_1.sym} 80 -540 3 0 {name=C4 model=cap_mim_m3_1 W=50 L=50 MF=1 spiceprefix=X}
-C {switch/switch.sym} 0 -530 0 0 {name=x10}
+C {switch/switch.sym} 0 -530 0 0 {name=x8}
 C {devices/ipin.sym} -140 -410 0 0 {name=p3 lab=sw3}
 C {devices/ipin.sym} -140 -570 0 0 {name=p10 lab=sw4}

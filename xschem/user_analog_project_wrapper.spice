@@ -1,4 +1,4 @@
-** sch_path: /run/media/thuat/build/cmos/ColRO/xschem/user_analog_project_wrapper.sch
+** sch_path: /home/longtdt/ColRO/xschem/user_analog_project_wrapper.sch
 **.subckt user_analog_project_wrapper vdda1 vdda2 vssa1 vssa2 vccd1 vccd2 vssd1 vssd2 wb_clk_i
 *+ wb_rst_i wbs_stb_i wbs_cyc_i wbs_we_i wbs_sel_i[3],wbs_sel_i[2],wbs_sel_i[1],wbs_sel_i[0]
 *+ wbs_dat_i[31],wbs_dat_i[30],wbs_dat_i[29],wbs_dat_i[28],wbs_dat_i[27],wbs_dat_i[26],wbs_dat_i[25],wbs_dat_i[24],wbs_dat_i[23],wbs_dat_i[22],wbs_dat_i[21],wbs_dat_i[20],wbs_dat_i[19],wbs_dat_i[18],wbs_dat_i[17],wbs_dat_i[16],wbs_dat_i[15],wbs_dat_i[14],wbs_dat_i[13],wbs_dat_i[12],wbs_dat_i[11],wbs_dat_i[10],wbs_dat_i[9],wbs_dat_i[8],wbs_dat_i[7],wbs_dat_i[6],wbs_dat_i[5],wbs_dat_i[4],wbs_dat_i[3],wbs_dat_i[2],wbs_dat_i[1],wbs_dat_i[0]
@@ -67,27 +67,26 @@ R4 vssd1 io_clamp_low[1] sky130_fd_pr__res_generic_m3 W=11 L=0.25 m=1
 R5 vssd1 io_clamp_high[1] sky130_fd_pr__res_generic_m3 W=11 L=0.25 m=1
 R6 vssd1 io_clamp_low[0] sky130_fd_pr__res_generic_m3 W=11 L=0.25 m=1
 R7 vssd1 io_clamp_high[0] sky130_fd_pr__res_generic_m3 W=11 L=0.25 m=1
-x3 vccd1 vssd1 gpio_analog[0] io_analog[0] gpio_analog[1] gpio_analog[2] gpio_analog[3]
-+ gpio_analog[4] gpio_analog[5] io_in[0] io_in[1] io_in[2] io_in[3] io_in[4] io_in[5] io_in[6] ColROs
-x1[6] net1[6] vccd1 not
-x1[5] net1[5] vccd1 not
-x1[4] net1[4] vccd1 not
-x1[3] net1[3] vccd1 not
-x1[2] net1[2] vccd1 not
-x1[1] net1[1] vccd1 not
-x1[0] net1[0] vccd1 not
-x2[6] io_oeb[6] net1[6] not
-x2[5] io_oeb[5] net1[5] not
-x2[4] io_oeb[4] net1[4] not
-x2[3] io_oeb[3] net1[3] not
-x2[2] io_oeb[2] net1[2] not
-x2[1] io_oeb[1] net1[1] not
-x2[0] io_oeb[0] net1[0] not
+x3 vccd1 vssd1 gpio_analog[6] io_analog[0] gpio_analog[5] gpio_analog[4] gpio_analog[3]
++ gpio_analog[2] gpio_analog[1] io_in[7] io_in[6] io_in[5] io_in[4] io_in[3] io_in[2] io_in[1] ColROs
+XR[12] vccd1 io_oeb[13] R_0-125
+XR[11] vccd1 io_oeb[12] R_0-125
+XR[10] vccd1 io_oeb[11] R_0-125
+XR[9] vccd1 io_oeb[10] R_0-125
+XR[8] vccd1 io_oeb[9] R_0-125
+XR[7] vccd1 io_oeb[8] R_0-125
+XR[6] vccd1 io_oeb[7] R_0-125
+XR[5] vccd1 io_oeb[6] R_0-125
+XR[4] vccd1 io_oeb[5] R_0-125
+XR[3] vccd1 io_oeb[4] R_0-125
+XR[2] vccd1 io_oeb[3] R_0-125
+XR[1] vccd1 io_oeb[2] R_0-125
+XR[0] vccd1 io_oeb[1] R_0-125
 **.ends
 
 * expanding   symbol:  ColROs.sym # of pins=16
-** sym_path: /run/media/thuat/build/cmos/ColRO/xschem/ColROs.sym
-** sch_path: /run/media/thuat/build/cmos/ColRO/xschem/ColROs.sch
+** sym_path: /home/longtdt/ColRO/xschem/ColROs.sym
+** sch_path: /home/longtdt/ColRO/xschem/ColROs.sch
 .subckt ColROs VDD GROUND AIn0 AOut AIn1 AIn2 AIn3 AIn4 AIn5 REG0 REG1 REG2 REG3 REG4 REG5 REG6
 *.opin AOut
 *.ipin REG1
@@ -112,24 +111,19 @@ x3 REG6 net2 net3 net1 mux2_1
 .ends
 
 
-* expanding   symbol:  not/not.sym # of pins=2
-** sym_path: /run/media/thuat/build/cmos/ColRO/xschem/not/not.sym
-** sch_path: /run/media/thuat/build/cmos/ColRO/xschem/not/not.sch
-.subckt not out in
+* expanding   symbol:  R_0-125/R_0-125.sym # of pins=2
+** sym_path: /home/longtdt/ColRO/xschem/R_0-125/R_0-125.sym
+** sch_path: /home/longtdt/ColRO/xschem/R_0-125/R_0-125.sch
+.subckt R_0-125 out in
 *.ipin in
 *.opin out
-XM10 out in VDD VDD sky130_fd_pr__pfet_01v8_lvt L=0.35 W=1 nf=1 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29'
-+ pd='2*int((nf+1)/2) * (W/nf + 0.29)' ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W'
-+ sa=0 sb=0 sd=0 mult=1 m=1
-XM1 out in GND GND sky130_fd_pr__nfet_01v8_lvt L=0.15 W=1 nf=1 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29'
-+ pd='2*int((nf+1)/2) * (W/nf + 0.29)' ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W'
-+ sa=0 sb=0 sd=0 mult=1 m=1
+R1 in out sky130_fd_pr__res_generic_m1 W=10 L=10 m=1
 .ends
 
 
 * expanding   symbol:  diffamp/diffamp.sym # of pins=5
-** sym_path: /run/media/thuat/build/cmos/ColRO/xschem/diffamp/diffamp.sym
-** sch_path: /run/media/thuat/build/cmos/ColRO/xschem/diffamp/diffamp.sch
+** sym_path: /home/longtdt/ColRO/xschem/diffamp/diffamp.sym
+** sch_path: /home/longtdt/ColRO/xschem/diffamp/diffamp.sch
 .subckt diffamp PCAS OUT REF PIX GM_BIAS
 *.ipin PCAS
 *.ipin PIX
@@ -161,8 +155,8 @@ XM6 net1 REF net4 GND sky130_fd_pr__nfet_01v8_lvt L=3.5 W=800 nf=35 ad='int((nf+
 
 
 * expanding   symbol:  Integrator/integrator.sym # of pins=10
-** sym_path: /run/media/thuat/build/cmos/ColRO/xschem/Integrator/integrator.sym
-** sch_path: /run/media/thuat/build/cmos/ColRO/xschem/Integrator/integrator.sch
+** sym_path: /home/longtdt/ColRO/xschem/Integrator/integrator.sym
+** sch_path: /home/longtdt/ColRO/xschem/Integrator/integrator.sch
 .subckt integrator sw2 sw1 intin intout opbias en Vtune rst sw4 sw3
 *.ipin intin
 *.ipin Vtune
@@ -176,24 +170,24 @@ XM6 net1 REF net4 GND sky130_fd_pr__nfet_01v8_lvt L=3.5 W=800 nf=35 ad='int((nf+
 *.ipin sw4
 XC1 net4 intout sky130_fd_pr__cap_mim_m3_1 W=50 L=50 MF=1 m=1
 XC2 net3 intout sky130_fd_pr__cap_mim_m3_1 W=50 L=50 MF=1 m=1
-x1 sw2 net3 net2 switch
-x2 sw1 net4 net2 switch
+x9 sw2 net3 net2 switch
+x1 sw1 net4 net2 switch
 x3 Vtune intin curr_mir
 x4 opbias net1 net2 intout opamp
 x5 rst intout net2 switch
 x6 en net1 GND switch
 x7 net5 en not
-x8 net5 net2 intin switch
+x2 net5 net2 intin switch
 XC3 net6 intout sky130_fd_pr__cap_mim_m3_1 W=50 L=50 MF=1 m=1
-x9 sw3 net6 net2 switch
+x10 sw3 net6 net2 switch
 XC4 net7 intout sky130_fd_pr__cap_mim_m3_1 W=50 L=50 MF=1 m=1
-x10 sw4 net7 net2 switch
+x8 sw4 net7 net2 switch
 .ends
 
 
 * expanding   symbol:  buffer/buffer.sym # of pins=3
-** sym_path: /run/media/thuat/build/cmos/ColRO/xschem/buffer/buffer.sym
-** sch_path: /run/media/thuat/build/cmos/ColRO/xschem/buffer/buffer.sch
+** sym_path: /home/longtdt/ColRO/xschem/buffer/buffer.sym
+** sch_path: /home/longtdt/ColRO/xschem/buffer/buffer.sch
 .subckt buffer opbias in out
 *.ipin in
 *.ipin opbias
@@ -203,22 +197,22 @@ x1 opbias in out out opamp
 
 
 * expanding   symbol:  mux2_1/mux2_1.sym # of pins=4
-** sym_path: /run/media/thuat/build/cmos/ColRO/xschem/mux2_1/mux2_1.sym
-** sch_path: /run/media/thuat/build/cmos/ColRO/xschem/mux2_1/mux2_1.sch
+** sym_path: /home/longtdt/ColRO/xschem/mux2_1/mux2_1.sym
+** sch_path: /home/longtdt/ColRO/xschem/mux2_1/mux2_1.sch
 .subckt mux2_1 SEL0 IN1 OUT IN0
 *.ipin SEL0
 *.opin OUT
 *.ipin IN1
 *.ipin IN0
 x1 net1 SEL0 not
-x5 SEL0 OUT IN1 switch
-x6 net1 OUT IN0 switch
+x6 SEL0 OUT IN1 switch
+x5 net1 OUT IN0 switch
 .ends
 
 
 * expanding   symbol:  switch/switch.sym # of pins=3
-** sym_path: /run/media/thuat/build/cmos/ColRO/xschem/switch/switch.sym
-** sch_path: /run/media/thuat/build/cmos/ColRO/xschem/switch/switch.sch
+** sym_path: /home/longtdt/ColRO/xschem/switch/switch.sym
+** sch_path: /home/longtdt/ColRO/xschem/switch/switch.sch
 .subckt switch toggle out in
 *.ipin toggle
 *.ipin in
@@ -234,8 +228,8 @@ XM17 in toggle out GND sky130_fd_pr__nfet_01v8_lvt L=3 W=200 nf=5 ad='int((nf+1)
 
 
 * expanding   symbol:  current_mirror/curr_mir.sym # of pins=2
-** sym_path: /run/media/thuat/build/cmos/ColRO/xschem/current_mirror/curr_mir.sym
-** sch_path: /run/media/thuat/build/cmos/ColRO/xschem/current_mirror/curr_mir.sch
+** sym_path: /home/longtdt/ColRO/xschem/current_mirror/curr_mir.sym
+** sch_path: /home/longtdt/ColRO/xschem/current_mirror/curr_mir.sch
 .subckt curr_mir Vtune Ib
 *.ipin Vtune
 *.iopin Ib
@@ -252,8 +246,8 @@ XM10 net1 Vtune VDD VDD sky130_fd_pr__pfet_01v8_lvt L=10 W=10 nf=1 ad='int((nf+1
 
 
 * expanding   symbol:  opamp/opamp.sym # of pins=4
-** sym_path: /run/media/thuat/build/cmos/ColRO/xschem/opamp/opamp.sym
-** sch_path: /run/media/thuat/build/cmos/ColRO/xschem/opamp/opamp.sch
+** sym_path: /home/longtdt/ColRO/xschem/opamp/opamp.sym
+** sch_path: /home/longtdt/ColRO/xschem/opamp/opamp.sch
 .subckt opamp opbias inp inn out
 *.ipin inp
 *.ipin inn
@@ -296,6 +290,21 @@ XM6 net4 inp net2 VDD sky130_fd_pr__pfet_01v8_lvt L=3 W=15 nf=3 ad='int((nf+1)/2
 + sa=0 sb=0 sd=0 mult=1 m=1
 .ends
 
-.GLOBAL VDD
+
+* expanding   symbol:  not/not.sym # of pins=2
+** sym_path: /home/longtdt/ColRO/xschem/not/not.sym
+** sch_path: /home/longtdt/ColRO/xschem/not/not.sch
+.subckt not out in
+*.ipin in
+*.opin out
+XM10 out in VDD VDD sky130_fd_pr__pfet_01v8_lvt L=0.35 W=1 nf=1 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29'
++ pd='2*int((nf+1)/2) * (W/nf + 0.29)' ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W'
++ sa=0 sb=0 sd=0 mult=1 m=1
+XM1 out in GND GND sky130_fd_pr__nfet_01v8_lvt L=0.15 W=1 nf=1 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29'
++ pd='2*int((nf+1)/2) * (W/nf + 0.29)' ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W'
++ sa=0 sb=0 sd=0 mult=1 m=1
+.ends
+
 .GLOBAL GND
+.GLOBAL VDD
 .end
