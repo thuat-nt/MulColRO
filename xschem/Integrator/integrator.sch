@@ -16,7 +16,7 @@ lab=intin}
 N -650 270 -630 270 {
 lab=Vtune}
 N -70 -30 -70 70 {
-lab=rst}
+lab=#net2}
 N 170 110 270 110 {
 lab=intout}
 N 110 -30 210 -30 {
@@ -26,19 +26,19 @@ lab=intout}
 N 80 160 80 180 {
 lab=opbias}
 N -70 -130 -70 -30 {
-lab=rst}
+lab=#net2}
 N 110 -130 210 -130 {
 lab=intout}
 N 210 -130 210 -30 {
 lab=intout}
 N -70 -130 -60 -130 {
-lab=rst}
-N 40 -130 50 -130 {
 lab=#net2}
-N -70 -30 -60 -30 {
-lab=rst}
-N 40 -30 50 -30 {
+N 40 -130 50 -130 {
 lab=#net3}
+N -70 -30 -60 -30 {
+lab=#net2}
+N 40 -30 50 -30 {
+lab=#net4}
 N -140 -60 -10 -60 {
 lab=sw1}
 N -140 -160 -10 -160 {
@@ -50,43 +50,46 @@ lab=en}
 N -360 400 -40 400 {
 lab=en}
 N -210 100 -210 180 {
-lab=#net4}
+lab=#net5}
 N -330 70 -260 70 {
 lab=intin}
 N -70 70 10 70 {
-lab=rst}
+lab=#net2}
 N -160 70 -70 70 {
-lab=rst}
+lab=#net2}
 N -70 -250 10 -250 {
-lab=rst}
+lab=#net2}
 N 110 -250 210 -250 {
 lab=intout}
-N 210 -250 210 -130 {
-lab=intout}
-N -70 -250 -70 -130 {
-lab=rst}
 N 110 -380 210 -380 {
 lab=intout}
 N -70 -380 -60 -380 {
-lab=rst}
+lab=#net2}
 N 40 -380 50 -380 {
-lab=#net5}
+lab=#net6}
 N -140 -410 -10 -410 {
 lab=sw3}
 N 110 -540 210 -540 {
 lab=intout}
 N -70 -540 -60 -540 {
-lab=rst}
+lab=#net2}
 N 40 -540 50 -540 {
-lab=#net6}
+lab=#net7}
 N -140 -570 -10 -570 {
 lab=sw4}
 N -70 -540 -70 -230 {
-lab=rst}
+lab=#net2}
 N 210 -540 210 -240 {
 lab=intout}
-N -140 -280 60 -280 {}
-C {devices/gnd.sym} -10 450 0 0 {name=l1 lab=GND}
+N -140 -280 60 -280 {
+lab=rst}
+N -10 450 -10 460 {
+lab=GND}
+N -70 -230 -70 -130 {
+lab=#net2}
+N 210 -240 210 -130 {
+lab=intout}
+C {devices/gnd.sym} -10 460 0 0 {name=l1 lab=GND}
 C {devices/ipin.sym} -370 70 0 0 {name=p1 lab=intin}
 C {devices/ipin.sym} -650 270 0 0 {name=p2 lab=Vtune}
 C {sky130_fd_pr/cap_mim_m3_1.sym} 80 -30 3 0 {name=C1 model=cap_mim_m3_1 W=50 L=50 MF=1 spiceprefix=X}

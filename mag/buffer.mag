@@ -1,6 +1,6 @@
 magic
 tech sky130A
-timestamp 1695803704
+timestamp 1695908076
 << metal1 >>
 rect 3660 5583 9473 5591
 rect 3660 5461 9480 5583
@@ -85,7 +85,7 @@ rect 2824 3778 2833 3854
 rect 2906 3778 5866 3854
 rect 2824 3764 5866 3778
 use opamp  x1
-timestamp 1695803704
+timestamp 1695908076
 transform 1 0 0 0 1 900
 box 3034 622 9644 4507
 << labels >>

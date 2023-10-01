@@ -1,4 +1,4 @@
-** sch_path: /run/media/thuat/build/cmos/MulColRO/xschem/user_analog_project_wrapper.sch
+** sch_path: /run/media/thuat/build/cmos/ColRO/xschem/user_analog_project_wrapper.sch
 **.subckt user_analog_project_wrapper vdda1 vdda2 vssa1 vssa2 vccd1 vccd2 vssd1 vssd2 wb_clk_i
 *+ wb_rst_i wbs_stb_i wbs_cyc_i wbs_we_i wbs_sel_i[3],wbs_sel_i[2],wbs_sel_i[1],wbs_sel_i[0]
 *+ wbs_dat_i[31],wbs_dat_i[30],wbs_dat_i[29],wbs_dat_i[28],wbs_dat_i[27],wbs_dat_i[26],wbs_dat_i[25],wbs_dat_i[24],wbs_dat_i[23],wbs_dat_i[22],wbs_dat_i[21],wbs_dat_i[20],wbs_dat_i[19],wbs_dat_i[18],wbs_dat_i[17],wbs_dat_i[16],wbs_dat_i[15],wbs_dat_i[14],wbs_dat_i[13],wbs_dat_i[12],wbs_dat_i[11],wbs_dat_i[10],wbs_dat_i[9],wbs_dat_i[8],wbs_dat_i[7],wbs_dat_i[6],wbs_dat_i[5],wbs_dat_i[4],wbs_dat_i[3],wbs_dat_i[2],wbs_dat_i[1],wbs_dat_i[0]
@@ -14,7 +14,7 @@
 *+ gpio_noesd[17],gpio_noesd[16],gpio_noesd[15],gpio_noesd[14],gpio_noesd[13],gpio_noesd[12],gpio_noesd[11],gpio_noesd[10],gpio_noesd[9],gpio_noesd[8],gpio_noesd[7],gpio_noesd[6],gpio_noesd[5],gpio_noesd[4],gpio_noesd[3],gpio_noesd[2],gpio_noesd[1],gpio_noesd[0]
 *+ io_analog[10],io_analog[9],io_analog[8],io_analog[7],io_analog[6],io_analog[5],io_analog[4],io_analog[3],io_analog[2],io_analog[1],io_analog[0] io_clamp_high[2],io_clamp_high[1],io_clamp_high[0] io_clamp_low[2],io_clamp_low[1],io_clamp_low[0]
 *+ user_irq[2],user_irq[1],user_irq[0]
-*+ la_oenb[127],la_oenb[126],la_oenb[125],la_oenb[124],la_oenb[123],la_oenb[122],la_oenb[121],la_oenb[120],la_oenb[119],la_oenb[118],la_oenb[117],la_oenb[116],la_oenb[115],la_oenb[114],la_oenb[113],la_oenb[112],la_oenb[111],la_oenb[110],la_oenb[109],la_oenb[108],la_oenb[107],la_oenb[106],la_oenb[105],la_oenb[104],la_oenb[103],la_oenb[102],la_oenb[101],la_oenb[100],la_oenb[99],la_oenb[98],la_oenb[97],la_oenb[96],la_oenb[95],la_oenb[94],la_oenb[93],la_oenb[92],la_oenb[91],la_oenb[90],la_oenb[89],la_oenb[88],la_oenb[87],la_oenb[86],la_oenb[85],la_oenb[84],la_oenb[83],la_oenb[82],la_oenb[81],la_oenb[80],la_oenb[79],la_oenb[78],la_oenb[77],la_oenb[76],la_oenb[75],la_oenb[74],la_oenb[73],la_oenb[72],la_oenb[71],la_oenb[70],la_oenb[69],la_oenb[68],la_oenb[67],la_oenb[66],la_oenb[65],la_oenb[64],la_oenb[63],la_oenb[62],la_oenb[61],la_oenb[60],la_oenb[59],la_oenb[58],la_oenb[57],la_oenb[56],la_oenb[55],la_oenb[54],la_oenb[53],la_oenb[52],la_oenb[51],la_oenb[50],la_oenb[49],la_oenb[48],la_oenb[47],la_oenb[46],la_oenb[45],la_oenb[44],la_oenb[43],la_oenb[42],la_oenb[41],la_oenb[40],la_oenb[39],la_oenb[38],la_oenb[37],la_oenb[36],la_oenb[35],la_oenb[34],la_oenb[33],la_oenb[32],la_oenb[31],la_oenb[30],la_oenb[29],la_oenb[28],la_oenb[27],la_oenb[26],la_oenb[25],la_oenb[24],la_oenb[23],la_oenb[22],la_oenb[21],la_oenb[20],la_oenb[19],la_oenb[18],la_oenb[17],la_oenb[16],la_oenb[15],la_oenb[14],la_oenb[13],la_oenb[12],la_oenb[11],la_oenb[10],la_oenb[9],la_oenb[8],la_oenb[7],la_oenb[6],la_oenb[5],la_oenb[4],la_oenb[3],la_oenb[2],la_oenb[1],la_oenb[0]
+*+ la_oenb[127],la_oenb[126],la_oenb[125],la_oenb[124],la_oenb[123],la_oenb[122],la_oenb[121],la_oenb[120],la_oenb[119],la_oenb[118],la_oenb[117],la_oenb[116],la_oenb[115],la_oenb[114],la_oenb[113],la_oenb[112],la_oenb[111],la_oenb[110],la_oenb[109],la_oenb[108],la_oenb[107],la_oenb[106],la_oenb[105],la_oenb[104],la_oenb[103],la_oenb[102],la_oenb[101],la_oenb[100],la_oenb[99],la_oenb[98],la_oenb[97],la_oenb[96],la_oenb[95],la_oenb[94],la_oenb[93],la_oenb[92],la_oenb[91],la_oenb[90],la_oenb[89],la_oenb[88],la_oenb[87],la_oenb[86],la_oenb[85],la_oenb[84],la_oenb[83],la_oenb[82],la_oenb[81],la_oenb[80],la_oenb[79],la_oenb[78],la_oenb[77],la_oenb[76],la_oenb[75],la_oenb[74],la_oenb[73],la_oenb[72],la_oenb[71],la_oenb[70],la_oenb[69],la_oenb[68],la_oenb[67],la_oenb[66],la_oenb[65],la_oenb[64],la_oenb[63],la_oenb[62],la_oenb[61],la_oenb[60],la_oenb[59],la_oenb[58],la_oenb[57],la_oenb[56],la_oenb[55],la_oenb[54],la_oenb[53],la_oenb[52],la_oenb[51],la_oenb[50],la_oenb[49],la_oenb[48],la_oenb[47],la_oenb[46],la_oenb[45],la_oenb[44],la_oenb[43],la_oenb[42],la_oenb[41],la_oenb[40],la_oenb[39],la_oenb[38],la_oenb[37],la_oenb[36],la_oenb[35],la_oenb[34],la_oenb[33],la_oenb[32],la_oenb[31],la_oenb[30],la_oenb[29],la_oenb[28],la_oenb[27],la_oenb[26],la_oenb[25],la_oenb[24],la_oenb[23],la_oenb[22],la_oenb[21],la_oenb[20],la_oenb[19],la_oenb[18],la_oenb[17],la_oenb[16],la_oenb[15],la_oenb[14],la_oenb[13],la_oenb[12],la_oenb[11],la_oenb[10],la_oenb[9],la_oenb[8],la_oenb[7],la_oenb[6],la_oenb[5],la_oenb[4],la_oenb[3],la_oenb[2],la_oenb[1],la_oenb[0] vdda1
 *.iopin vdda1
 *.iopin vdda2
 *.iopin vssa1
@@ -60,23 +60,34 @@
 *.opin user_irq[2],user_irq[1],user_irq[0]
 *.ipin
 *+ la_oenb[127],la_oenb[126],la_oenb[125],la_oenb[124],la_oenb[123],la_oenb[122],la_oenb[121],la_oenb[120],la_oenb[119],la_oenb[118],la_oenb[117],la_oenb[116],la_oenb[115],la_oenb[114],la_oenb[113],la_oenb[112],la_oenb[111],la_oenb[110],la_oenb[109],la_oenb[108],la_oenb[107],la_oenb[106],la_oenb[105],la_oenb[104],la_oenb[103],la_oenb[102],la_oenb[101],la_oenb[100],la_oenb[99],la_oenb[98],la_oenb[97],la_oenb[96],la_oenb[95],la_oenb[94],la_oenb[93],la_oenb[92],la_oenb[91],la_oenb[90],la_oenb[89],la_oenb[88],la_oenb[87],la_oenb[86],la_oenb[85],la_oenb[84],la_oenb[83],la_oenb[82],la_oenb[81],la_oenb[80],la_oenb[79],la_oenb[78],la_oenb[77],la_oenb[76],la_oenb[75],la_oenb[74],la_oenb[73],la_oenb[72],la_oenb[71],la_oenb[70],la_oenb[69],la_oenb[68],la_oenb[67],la_oenb[66],la_oenb[65],la_oenb[64],la_oenb[63],la_oenb[62],la_oenb[61],la_oenb[60],la_oenb[59],la_oenb[58],la_oenb[57],la_oenb[56],la_oenb[55],la_oenb[54],la_oenb[53],la_oenb[52],la_oenb[51],la_oenb[50],la_oenb[49],la_oenb[48],la_oenb[47],la_oenb[46],la_oenb[45],la_oenb[44],la_oenb[43],la_oenb[42],la_oenb[41],la_oenb[40],la_oenb[39],la_oenb[38],la_oenb[37],la_oenb[36],la_oenb[35],la_oenb[34],la_oenb[33],la_oenb[32],la_oenb[31],la_oenb[30],la_oenb[29],la_oenb[28],la_oenb[27],la_oenb[26],la_oenb[25],la_oenb[24],la_oenb[23],la_oenb[22],la_oenb[21],la_oenb[20],la_oenb[19],la_oenb[18],la_oenb[17],la_oenb[16],la_oenb[15],la_oenb[14],la_oenb[13],la_oenb[12],la_oenb[11],la_oenb[10],la_oenb[9],la_oenb[8],la_oenb[7],la_oenb[6],la_oenb[5],la_oenb[4],la_oenb[3],la_oenb[2],la_oenb[1],la_oenb[0]
-R1 vssa1 io_clamp_low[2] sky130_fd_pr__res_generic_m3 W=11 L=0.25 m=1
-R2 vssa1 io_clamp_high[2] sky130_fd_pr__res_generic_m3 W=11 L=0.25 m=1
-R4 vssa1 io_clamp_low[1] sky130_fd_pr__res_generic_m3 W=11 L=0.25 m=1
-R5 vssa1 io_clamp_high[1] sky130_fd_pr__res_generic_m3 W=11 L=0.25 m=1
-R6 vssa1 io_clamp_low[0] sky130_fd_pr__res_generic_m3 W=11 L=0.25 m=1
-R7 io_analog[4] io_clamp_high[0] sky130_fd_pr__res_generic_m3 W=11 L=0.25 m=1
-R8 vssd1 io_oeb[12] sky130_fd_pr__res_generic_m3 W=0.56 L=0.49 m=1
-R9 vssd1 io_oeb[16] sky130_fd_pr__res_generic_m3 W=0.56 L=0.31 m=1
-R11 vssd1 io_oeb[11] sky130_fd_pr__res_generic_m3 W=0.56 L=0.58 m=1
-R12 vssd1 io_oeb[15] sky130_fd_pr__res_generic_m3 W=0.56 L=0.6 m=1
-x3 vccd1 vssa1 gpio_analog[0] gpio_analog[7] gpio_analog[1] gpio_analog[2] gpio_analog[3]
-+ gpio_analog[4] gpio_analog[5] io_out[0] io_out[1] io_out[2] io_out[3] io_out[4] io_out[5] io_out[6] ColROs
+*.iopin vdda1
+R1 vssd1 io_clamp_low[2] sky130_fd_pr__res_generic_m3 W=11 L=0.25 m=1
+R2 vssd1 io_clamp_high[2] sky130_fd_pr__res_generic_m3 W=11 L=0.25 m=1
+R4 vssd1 io_clamp_low[1] sky130_fd_pr__res_generic_m3 W=11 L=0.25 m=1
+R5 vssd1 io_clamp_high[1] sky130_fd_pr__res_generic_m3 W=11 L=0.25 m=1
+R6 vssd1 io_clamp_low[0] sky130_fd_pr__res_generic_m3 W=11 L=0.25 m=1
+R7 vssd1 io_clamp_high[0] sky130_fd_pr__res_generic_m3 W=11 L=0.25 m=1
+x3 vccd1 vssd1 gpio_analog[0] io_analog[0] gpio_analog[1] gpio_analog[2] gpio_analog[3]
++ gpio_analog[4] gpio_analog[5] io_in[0] io_in[1] io_in[2] io_in[3] io_in[4] io_in[5] io_in[6] ColROs
+x1[6] net1[6] vccd1 not
+x1[5] net1[5] vccd1 not
+x1[4] net1[4] vccd1 not
+x1[3] net1[3] vccd1 not
+x1[2] net1[2] vccd1 not
+x1[1] net1[1] vccd1 not
+x1[0] net1[0] vccd1 not
+x2[6] io_oeb[6] net1[6] not
+x2[5] io_oeb[5] net1[5] not
+x2[4] io_oeb[4] net1[4] not
+x2[3] io_oeb[3] net1[3] not
+x2[2] io_oeb[2] net1[2] not
+x2[1] io_oeb[1] net1[1] not
+x2[0] io_oeb[0] net1[0] not
 **.ends
 
 * expanding   symbol:  ColROs.sym # of pins=16
-** sym_path: /run/media/thuat/build/cmos/MulColRO/xschem/ColROs.sym
-** sch_path: /run/media/thuat/build/cmos/MulColRO/xschem/ColROs.sch
+** sym_path: /run/media/thuat/build/cmos/ColRO/xschem/ColROs.sym
+** sch_path: /run/media/thuat/build/cmos/ColRO/xschem/ColROs.sch
 .subckt ColROs VDD GROUND AIn0 AOut AIn1 AIn2 AIn3 AIn4 AIn5 REG0 REG1 REG2 REG3 REG4 REG5 REG6
 *.opin AOut
 *.ipin REG1
@@ -101,42 +112,57 @@ x3 REG6 net2 net3 net1 mux2_1
 .ends
 
 
+* expanding   symbol:  not/not.sym # of pins=2
+** sym_path: /run/media/thuat/build/cmos/ColRO/xschem/not/not.sym
+** sch_path: /run/media/thuat/build/cmos/ColRO/xschem/not/not.sch
+.subckt not out in
+*.ipin in
+*.opin out
+XM10 out in VDD VDD sky130_fd_pr__pfet_01v8_lvt L=0.35 W=1 nf=1 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29'
++ pd='2*int((nf+1)/2) * (W/nf + 0.29)' ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W'
++ sa=0 sb=0 sd=0 mult=1 m=1
+XM1 out in GND GND sky130_fd_pr__nfet_01v8_lvt L=0.15 W=1 nf=1 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29'
++ pd='2*int((nf+1)/2) * (W/nf + 0.29)' ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W'
++ sa=0 sb=0 sd=0 mult=1 m=1
+.ends
+
+
 * expanding   symbol:  diffamp/diffamp.sym # of pins=5
-** sym_path: /run/media/thuat/build/cmos/MulColRO/xschem/diffamp/diffamp.sym
-** sch_path: /run/media/thuat/build/cmos/MulColRO/xschem/diffamp/diffamp.sch
+** sym_path: /run/media/thuat/build/cmos/ColRO/xschem/diffamp/diffamp.sym
+** sch_path: /run/media/thuat/build/cmos/ColRO/xschem/diffamp/diffamp.sch
 .subckt diffamp PCAS OUT REF PIX GM_BIAS
 *.ipin PCAS
 *.ipin PIX
 *.ipin REF
 *.ipin GM_BIAS
 *.opin OUT
-XM4 OUT PCAS net2 net2 sky130_fd_pr__pfet_01v8_lvt L=3 W=90 nf=3 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29'
-+ pd='2*int((nf+1)/2) * (W/nf + 0.29)' ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W'
-+ sa=0 sb=0 sd=0 mult=1 m=1
-XM5 net1 PCAS net3 net3 sky130_fd_pr__pfet_01v8_lvt L=3 W=90 nf=3 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29'
-+ pd='2*int((nf+1)/2) * (W/nf + 0.29)' ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W'
-+ sa=0 sb=0 sd=0 mult=1 m=1
-XM6 OUT PIX net4 net4 sky130_fd_pr__nfet_01v8_lvt L=3.5 W=800 nf=35 ad='int((nf+1)/2) * W/nf * 0.29'
+XM17 net4 GM_BIAS GND GND sky130_fd_pr__nfet_01v8_lvt L=15 W=20 nf=2 ad='int((nf+1)/2) * W/nf * 0.29'
 + as='int((nf+2)/2) * W/nf * 0.29' pd='2*int((nf+1)/2) * (W/nf + 0.29)' ps='2*int((nf+2)/2) * (W/nf + 0.29)'
 + nrd='0.29 / W' nrs='0.29 / W' sa=0 sb=0 sd=0 mult=1 m=1
-XM7 net1 REF net4 net4 sky130_fd_pr__nfet_01v8_lvt L=3.5 W=800 nf=35 ad='int((nf+1)/2) * W/nf * 0.29'
-+ as='int((nf+2)/2) * W/nf * 0.29' pd='2*int((nf+1)/2) * (W/nf + 0.29)' ps='2*int((nf+2)/2) * (W/nf + 0.29)'
-+ nrd='0.29 / W' nrs='0.29 / W' sa=0 sb=0 sd=0 mult=1 m=1
+XM8 net2 net1 VDD VDD sky130_fd_pr__pfet_01v8_lvt L=15 W=90 nf=3 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29'
++ pd='2*int((nf+1)/2) * (W/nf + 0.29)' ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W'
++ sa=0 sb=0 sd=0 mult=1 m=1
 XM1 net3 net1 VDD VDD sky130_fd_pr__pfet_01v8_lvt L=15 W=90 nf=3 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29'
 + pd='2*int((nf+1)/2) * (W/nf + 0.29)' ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W'
 + sa=0 sb=0 sd=0 mult=1 m=1
-XM2 net2 net1 VDD VDD sky130_fd_pr__pfet_01v8_lvt L=15 W=90 nf=3 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29'
+XM2 OUT PCAS net2 VDD sky130_fd_pr__pfet_01v8_lvt L=3 W=90 nf=3 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29'
 + pd='2*int((nf+1)/2) * (W/nf + 0.29)' ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W'
 + sa=0 sb=0 sd=0 mult=1 m=1
-XM3 net4 GM_BIAS GND GND sky130_fd_pr__nfet_01v8_lvt L=15 W=20 nf=2 ad='int((nf+1)/2) * W/nf * 0.29'
+XM4 net1 PCAS net3 VDD sky130_fd_pr__pfet_01v8_lvt L=3 W=90 nf=3 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29'
++ pd='2*int((nf+1)/2) * (W/nf + 0.29)' ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W'
++ sa=0 sb=0 sd=0 mult=1 m=1
+XM5 OUT PIX net4 GND sky130_fd_pr__nfet_01v8_lvt L=3.5 W=800 nf=35 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29'
++ pd='2*int((nf+1)/2) * (W/nf + 0.29)' ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W'
++ sa=0 sb=0 sd=0 mult=1 m=1
+XM6 net1 REF net4 GND sky130_fd_pr__nfet_01v8_lvt L=3.5 W=800 nf=35 ad='int((nf+1)/2) * W/nf * 0.29'
 + as='int((nf+2)/2) * W/nf * 0.29' pd='2*int((nf+1)/2) * (W/nf + 0.29)' ps='2*int((nf+2)/2) * (W/nf + 0.29)'
 + nrd='0.29 / W' nrs='0.29 / W' sa=0 sb=0 sd=0 mult=1 m=1
 .ends
 
 
 * expanding   symbol:  Integrator/integrator.sym # of pins=10
-** sym_path: /run/media/thuat/build/cmos/MulColRO/xschem/Integrator/integrator.sym
-** sch_path: /run/media/thuat/build/cmos/MulColRO/xschem/Integrator/integrator.sch
+** sym_path: /run/media/thuat/build/cmos/ColRO/xschem/Integrator/integrator.sym
+** sch_path: /run/media/thuat/build/cmos/ColRO/xschem/Integrator/integrator.sch
 .subckt integrator sw2 sw1 intin intout opbias en Vtune rst sw4 sw3
 *.ipin intin
 *.ipin Vtune
@@ -166,8 +192,8 @@ x10 sw4 net7 net2 switch
 
 
 * expanding   symbol:  buffer/buffer.sym # of pins=3
-** sym_path: /run/media/thuat/build/cmos/MulColRO/xschem/buffer/buffer.sym
-** sch_path: /run/media/thuat/build/cmos/MulColRO/xschem/buffer/buffer.sch
+** sym_path: /run/media/thuat/build/cmos/ColRO/xschem/buffer/buffer.sym
+** sch_path: /run/media/thuat/build/cmos/ColRO/xschem/buffer/buffer.sch
 .subckt buffer opbias in out
 *.ipin in
 *.ipin opbias
@@ -177,8 +203,8 @@ x1 opbias in out out opamp
 
 
 * expanding   symbol:  mux2_1/mux2_1.sym # of pins=4
-** sym_path: /run/media/thuat/build/cmos/MulColRO/xschem/mux2_1/mux2_1.sym
-** sch_path: /run/media/thuat/build/cmos/MulColRO/xschem/mux2_1/mux2_1.sch
+** sym_path: /run/media/thuat/build/cmos/ColRO/xschem/mux2_1/mux2_1.sym
+** sch_path: /run/media/thuat/build/cmos/ColRO/xschem/mux2_1/mux2_1.sch
 .subckt mux2_1 SEL0 IN1 OUT IN0
 *.ipin SEL0
 *.opin OUT
@@ -191,25 +217,25 @@ x6 net1 OUT IN0 switch
 
 
 * expanding   symbol:  switch/switch.sym # of pins=3
-** sym_path: /run/media/thuat/build/cmos/MulColRO/xschem/switch/switch.sym
-** sch_path: /run/media/thuat/build/cmos/MulColRO/xschem/switch/switch.sch
+** sym_path: /run/media/thuat/build/cmos/ColRO/xschem/switch/switch.sym
+** sch_path: /run/media/thuat/build/cmos/ColRO/xschem/switch/switch.sch
 .subckt switch toggle out in
 *.ipin toggle
 *.ipin in
 *.opin out
-XM10 in net1 out out sky130_fd_pr__pfet_01v8_lvt L=3 W=200 nf=5 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29'
-+ pd='2*int((nf+1)/2) * (W/nf + 0.29)' ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W'
-+ sa=0 sb=0 sd=0 mult=1 m=1
-XM1 in toggle out GND sky130_fd_pr__nfet_01v8_lvt L=3 W=200 nf=5 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29'
-+ pd='2*int((nf+1)/2) * (W/nf + 0.29)' ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W'
-+ sa=0 sb=0 sd=0 mult=1 m=1
 x1 net1 toggle not
+XM26 out net1 in VDD sky130_fd_pr__pfet_01v8_lvt L=3 W=200 nf=5 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29'
++ pd='2*int((nf+1)/2) * (W/nf + 0.29)' ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W'
++ sa=0 sb=0 sd=0 mult=1 m=1
+XM17 in toggle out GND sky130_fd_pr__nfet_01v8_lvt L=3 W=200 nf=5 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29'
++ pd='2*int((nf+1)/2) * (W/nf + 0.29)' ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W'
++ sa=0 sb=0 sd=0 mult=1 m=1
 .ends
 
 
 * expanding   symbol:  current_mirror/curr_mir.sym # of pins=2
-** sym_path: /run/media/thuat/build/cmos/MulColRO/xschem/current_mirror/curr_mir.sym
-** sch_path: /run/media/thuat/build/cmos/MulColRO/xschem/current_mirror/curr_mir.sch
+** sym_path: /run/media/thuat/build/cmos/ColRO/xschem/current_mirror/curr_mir.sym
+** sch_path: /run/media/thuat/build/cmos/ColRO/xschem/current_mirror/curr_mir.sch
 .subckt curr_mir Vtune Ib
 *.ipin Vtune
 *.iopin Ib
@@ -226,8 +252,8 @@ XM10 net1 Vtune VDD VDD sky130_fd_pr__pfet_01v8_lvt L=10 W=10 nf=1 ad='int((nf+1
 
 
 * expanding   symbol:  opamp/opamp.sym # of pins=4
-** sym_path: /run/media/thuat/build/cmos/MulColRO/xschem/opamp/opamp.sym
-** sch_path: /run/media/thuat/build/cmos/MulColRO/xschem/opamp/opamp.sch
+** sym_path: /run/media/thuat/build/cmos/ColRO/xschem/opamp/opamp.sym
+** sch_path: /run/media/thuat/build/cmos/ColRO/xschem/opamp/opamp.sch
 .subckt opamp opbias inp inn out
 *.ipin inp
 *.ipin inn
@@ -247,12 +273,6 @@ XM4 net5 net1 VDD VDD sky130_fd_pr__pfet_01v8_lvt L=3 W=10 nf=2 ad='int((nf+1)/2
 XM10 out net5 VDD VDD sky130_fd_pr__pfet_01v8_lvt L=3 W=100 nf=5 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29'
 + pd='2*int((nf+1)/2) * (W/nf + 0.29)' ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W'
 + sa=0 sb=0 sd=0 mult=1 m=1
-XM14 net3 inn net2 net2 sky130_fd_pr__pfet_01v8_lvt L=3 W=15 nf=3 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29'
-+ pd='2*int((nf+1)/2) * (W/nf + 0.29)' ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W'
-+ sa=0 sb=0 sd=0 mult=1 m=1
-XM15 net4 inp net2 net2 sky130_fd_pr__pfet_01v8_lvt L=3 W=15 nf=3 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29'
-+ pd='2*int((nf+1)/2) * (W/nf + 0.29)' ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W'
-+ sa=0 sb=0 sd=0 mult=1 m=1
 XM17 out net4 GND GND sky130_fd_pr__nfet_01v8_lvt L=3 W=80 nf=5 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29'
 + pd='2*int((nf+1)/2) * (W/nf + 0.29)' ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W'
 + sa=0 sb=0 sd=0 mult=1 m=1
@@ -268,23 +288,14 @@ XM2 net1 net4 GND GND sky130_fd_pr__nfet_01v8_lvt L=3 W=8 nf=1 ad='int((nf+1)/2)
 XM5 net5 net3 GND GND sky130_fd_pr__nfet_01v8_lvt L=3 W=8 nf=1 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29'
 + pd='2*int((nf+1)/2) * (W/nf + 0.29)' ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W'
 + sa=0 sb=0 sd=0 mult=1 m=1
-.ends
-
-
-* expanding   symbol:  not/not.sym # of pins=2
-** sym_path: /run/media/thuat/build/cmos/MulColRO/xschem/not/not.sym
-** sch_path: /run/media/thuat/build/cmos/MulColRO/xschem/not/not.sch
-.subckt not out in
-*.ipin in
-*.opin out
-XM10 out in VDD VDD sky130_fd_pr__pfet_01v8_lvt L=0.35 W=1 nf=1 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29'
+XM1 net3 inn net2 VDD sky130_fd_pr__pfet_01v8_lvt L=3 W=15 nf=3 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29'
 + pd='2*int((nf+1)/2) * (W/nf + 0.29)' ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W'
 + sa=0 sb=0 sd=0 mult=1 m=1
-XM1 out in GND GND sky130_fd_pr__nfet_01v8_lvt L=0.15 W=1 nf=1 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29'
+XM6 net4 inp net2 VDD sky130_fd_pr__pfet_01v8_lvt L=3 W=15 nf=3 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29'
 + pd='2*int((nf+1)/2) * (W/nf + 0.29)' ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W'
 + sa=0 sb=0 sd=0 mult=1 m=1
 .ends
 
-.GLOBAL GND
 .GLOBAL VDD
+.GLOBAL GND
 .end
