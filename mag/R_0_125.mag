@@ -1,0 +1,9 @@
+magic
+tech sky130A
+magscale 1 2
+timestamp 1696147688
+use sky130_fd_pr__res_generic_m1_SAT4UL  R1
+timestamp 1696147195
+transform -1 0 1000 0 1 1657
+box -1000 -1057 1000 1057
+<< end >>

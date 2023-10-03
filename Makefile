@@ -127,11 +127,25 @@ precheck:
 
 .PHONY: run-precheck
 run-precheck: check-pdk check-precheck
-	@if [ "$$DISABLE_LVS" = "1" ]; then\
+	@if [ "$$CONSISTENCY" = "1" ]; then\
 		$(eval INPUT_DIRECTORY := $(shell pwd)) \
 		cd $(PRECHECK_ROOT) && \
 		docker run -v $(PRECHECK_ROOT):$(PRECHECK_ROOT) \
 		-v $(INPUT_DIRECTORY):$(INPUT_DIRECTORY) \
+		--privileged \
+		-v $(PDK_ROOT):$(PDK_ROOT) \
+		-e INPUT_DIRECTORY=$(INPUT_DIRECTORY) \
+		-e PDK_PATH=$(PDK_ROOT)/$(PDK) \
+		-e PDK_ROOT=$(PDK_ROOT) \
+		-e PDKPATH=$(PDKPATH) \
+		-u $(shell id -u $(USER)):$(shell id -g $(USER)) \
+		efabless/mpw_precheck:latest bash -c "cd $(PRECHECK_ROOT) ; python3 mpw_precheck.py --input_directory $(INPUT_DIRECTORY) --pdk_path $(PDK_ROOT)/$(PDK) consistency"; \
+	elif [ "$$DISABLE_LVS" = "1" ]; then\
+		$(eval INPUT_DIRECTORY := $(shell pwd)) \
+		cd $(PRECHECK_ROOT) && \
+		docker run -v $(PRECHECK_ROOT):$(PRECHECK_ROOT) \
+		-v $(INPUT_DIRECTORY):$(INPUT_DIRECTORY) \
+		--privileged \
 		-v $(PDK_ROOT):$(PDK_ROOT) \
 		-e INPUT_DIRECTORY=$(INPUT_DIRECTORY) \
 		-e PDK_PATH=$(PDK_ROOT)/$(PDK) \
@@ -145,6 +159,7 @@ run-precheck: check-pdk check-precheck
 		docker run -v $(PRECHECK_ROOT):$(PRECHECK_ROOT) \
 		-v $(INPUT_DIRECTORY):$(INPUT_DIRECTORY) \
 		-v $(PDK_ROOT):$(PDK_ROOT) \
+		--privileged \
 		-e INPUT_DIRECTORY=$(INPUT_DIRECTORY) \
 		-e PDK_PATH=$(PDK_ROOT)/$(PDK) \
 		-e PDK_ROOT=$(PDK_ROOT) \

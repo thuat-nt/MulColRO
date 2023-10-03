@@ -97,19 +97,19 @@ R6 vssd1 io_clamp_low[0] sky130_fd_pr__res_generic_m3 W=11 L=0.25 m=1
 R7 vssd1 io_clamp_high[0] sky130_fd_pr__res_generic_m3 W=11 L=0.25 m=1
 x3 vccd1 vssd1 gpio_analog[6] io_analog[0] gpio_analog[5] gpio_analog[4] gpio_analog[3]
 + gpio_analog[2] gpio_analog[1] io_in[7] io_in[6] io_in[5] io_in[4] io_in[3] io_in[2] io_in[1] ColROs
-XR[12] vccd1 io_oeb[13] R_0-125
-XR[11] vccd1 io_oeb[12] R_0-125
-XR[10] vccd1 io_oeb[11] R_0-125
-XR[9] vccd1 io_oeb[10] R_0-125
-XR[8] vccd1 io_oeb[9] R_0-125
-XR[7] vccd1 io_oeb[8] R_0-125
-XR[6] vccd1 io_oeb[7] R_0-125
-XR[5] vccd1 io_oeb[6] R_0-125
-XR[4] vccd1 io_oeb[5] R_0-125
-XR[3] vccd1 io_oeb[4] R_0-125
-XR[2] vccd1 io_oeb[3] R_0-125
-XR[1] vccd1 io_oeb[2] R_0-125
-XR[0] vccd1 io_oeb[1] R_0-125
+XR[12] io_oeb[13] vccd1 R_0_125
+XR[11] io_oeb[12] vccd1 R_0_125
+XR[10] io_oeb[11] vccd1 R_0_125
+XR[9] io_oeb[10] vccd1 R_0_125
+XR[8] io_oeb[9] vccd1 R_0_125
+XR[7] io_oeb[8] vccd1 R_0_125
+XR[6] io_oeb[7] vccd1 R_0_125
+XR[5] io_oeb[6] vccd1 R_0_125
+XR[4] io_oeb[5] vccd1 R_0_125
+XR[3] io_oeb[4] vccd1 R_0_125
+XR[2] io_oeb[3] vccd1 R_0_125
+XR[1] io_oeb[2] vccd1 R_0_125
+XR[0] io_oeb[1] vccd1 R_0_125
 .ends
 
 * expanding   symbol:  ColROs.sym # of pins=16
@@ -125,10 +125,10 @@ x3 REG6 net2 net3 net1 mux2_1
 .ends
 
 
-* expanding   symbol:  R_0-125/R_0-125.sym # of pins=2
-** sym_path: /run/media/thuat/build/cmos/MulColRO/xschem/R_0-125/R_0-125.sym
-** sch_path: /run/media/thuat/build/cmos/MulColRO/xschem/R_0-125/R_0-125.sch
-.subckt R_0-125 out in
+* expanding   symbol:  R_0_125/R_0_125.sym # of pins=2
+** sym_path: /run/media/thuat/build/cmos/MulColRO/xschem/R_0_125/R_0_125.sym
+** sch_path: /run/media/thuat/build/cmos/MulColRO/xschem/R_0_125/R_0_125.sch
+.subckt R_0_125 out in
 *.PININFO in:I out:O
 R1 in out sky130_fd_pr__res_generic_m1 W=10 L=10 m=1
 .ends

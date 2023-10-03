@@ -71,7 +71,7 @@ lab=io_oeb[13:1]}
 N 3880 170 3940 170 {
 lab=vssd1}
 N 3880 140 3940 140 {
-lab=vdda1}
+lab=VDD}
 N 3670 770 3670 790 {
 lab=io_oeb[13:1]}
 C {devices/iopin.sym} 3240 -470 0 0 {name=p1 lab=vdda1}
@@ -168,7 +168,7 @@ C {devices/lab_pin.sym} 3720 -50 2 1 {name=l9 sig_type=std_logic lab=io_in[2]}
 C {devices/lab_pin.sym} 3720 -30 2 1 {name=l11 sig_type=std_logic lab=io_in[1]}
 C {devices/lab_pin.sym} 4130 640 0 0 {name=l1 sig_type=std_logic lab=vssd1}
 C {devices/lab_pin.sym} 3880 170 0 0 {name=l12 sig_type=std_logic lab=vssd1}
-C {devices/iopin.sym} 3880 140 2 0 {name=p33 lab=vdda1}
 C {devices/lab_pin.sym} 3940 140 2 0 {name=p34 sig_type=std_logic lab=VDD}
 C {devices/lab_pin.sym} 3940 170 2 0 {name=p35 sig_type=std_logic lab=GND}
-C {R_0-125/R_0-125.sym} 3670 940 1 0 {name=XR[12:0]}
+C {R_0_125/R_0_125.sym} 3670 790 3 0 {name=XR[12:0]}
+C {devices/lab_pin.sym} 3880 140 0 0 {name=l24 sig_type=std_logic lab=vccd1}
