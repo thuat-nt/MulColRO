@@ -46,7 +46,7 @@ lab=#net4}
 N 670 -320 670 -300 {
 lab=#net4}
 N 670 -240 670 -220 {
-lab=GND}
+lab=VSS}
 N 610 -270 630 -270 {
 lab=GM_BIAS}
 N 670 -270 730 -270 {
@@ -86,8 +86,8 @@ C {devices/ipin.sym} 500 -400 0 0 {name=p4 lab=PIX}
 C {devices/ipin.sym} 860 -400 2 0 {name=p5 lab=REF}
 C {devices/ipin.sym} 610 -270 0 0 {name=p11 lab=GM_BIAS}
 C {devices/opin.sym} 550 -490 2 0 {name=p12 lab=OUT}
-C {devices/gnd.sym} 670 -220 0 0 {name=l1 lab=GND}
-C {devices/vdd.sym} 680 -760 0 0 {name=l2 lab=VDD}
+C {devices/iopin.sym} 670 -220 1 0 {name=p1 lab=VSS}
+C {devices/iopin.sym} 680 -760 3 0 {name=p2 lab=VDD}
 C {sky130_fd_pr/nfet_01v8_lvt.sym} 650 -270 0 0 {name=M17
 L=15
 W=20

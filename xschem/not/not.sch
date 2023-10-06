@@ -16,14 +16,21 @@ lab=out}
 N 120 -150 120 -140 {
 lab=VDD}
 N 120 80 120 100 {
-lab=GND}
-N 120 -160 120 -150 {}
-N 120 -110 140 -110 {}
-N 140 -150 140 -110 {}
-N 120 -150 140 -150 {}
-N 120 50 140 50 {}
-N 140 50 140 90 {}
-N 120 90 140 90 {}
+lab=VSS}
+N 120 -160 120 -150 {
+lab=VDD}
+N 120 -110 140 -110 {
+lab=VDD}
+N 140 -150 140 -110 {
+lab=VDD}
+N 120 -150 140 -150 {
+lab=VDD}
+N 120 50 140 50 {
+lab=VSS}
+N 140 50 140 90 {
+lab=VSS}
+N 120 90 140 90 {
+lab=VSS}
 C {sky130_fd_pr/pfet_01v8_lvt.sym} 100 -110 0 0 {name=M10
 L=0.35
 W=1
@@ -40,5 +47,7 @@ spiceprefix=X
 }
 C {devices/ipin.sym} 60 -20 0 0 {name=p1 lab=in}
 C {devices/opin.sym} 130 -20 0 0 {name=p2 lab=out}
-C {devices/vdd.sym} 120 -160 0 0 {name=l1 lab=VDD}
-C {devices/gnd.sym} 120 100 0 0 {name=l2 lab=GND}
+C {devices/iopin.sym} 120 -160 3 0 {name=p3 lab=VDD
+}
+C {devices/iopin.sym} 120 100 1 0 {name=p4 lab=VSS
+}

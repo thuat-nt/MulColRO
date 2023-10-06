@@ -87,3 +87,11 @@ C {devices/ipin.sym} -170 -200 0 0 {name=p10 lab=GROUND}
 C {devices/lab_pin.sym} -170 -200 2 0 {name=p54 sig_type=std_logic lab=GROUND}
 C {devices/ipin.sym} -170 -250 0 0 {name=p55 lab=VDD}
 C {devices/lab_pin.sym} -170 -250 2 0 {name=p56 sig_type=std_logic lab=VDD}
+C {devices/lab_pin.sym} 510 -170 1 0 {name=p36 sig_type=std_logic lab=VDD}
+C {devices/lab_pin.sym} 510 50 0 0 {name=p43 sig_type=std_logic lab=GROUND}
+C {devices/lab_pin.sym} 1030 -130 1 0 {name=p44 sig_type=std_logic lab=VDD}
+C {devices/lab_pin.sym} 1030 -30 3 0 {name=p45 sig_type=std_logic lab=GROUND}
+C {devices/lab_pin.sym} 80 -70 1 0 {name=p46 sig_type=std_logic lab=VDD}
+C {devices/lab_pin.sym} 80 50 0 0 {name=p47 sig_type=std_logic lab=GROUND}
+C {devices/lab_pin.sym} 1430 -150 1 0 {name=p48 sig_type=std_logic lab=VDD}
+C {devices/lab_pin.sym} 1430 -70 3 0 {name=p49 sig_type=std_logic lab=GROUND}

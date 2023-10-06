@@ -52,11 +52,11 @@ lab=#net3}
 N 1240 -280 1330 -280 {
 lab=#net3}
 N 1240 -150 1240 -110 {
-lab=GND}
+lab=VSS}
 N 1450 -150 1450 -110 {
-lab=GND}
+lab=VSS}
 N 1870 -340 1870 -110 {
-lab=GND}
+lab=VSS}
 N 1750 -650 1750 -570 {
 lab=#net5}
 N 1750 -570 1770 -570 {
@@ -102,45 +102,45 @@ lab=#net5}
 N 1340 -720 1340 -660 {
 lab=#net2}
 N 1580 -270 1600 -270 {
-lab=GND}
+lab=VSS}
 N 1600 -270 1600 -220 {
-lab=GND}
+lab=VSS}
 N 1580 -220 1600 -220 {
-lab=GND}
+lab=VSS}
 N 1720 -270 1740 -270 {
-lab=GND}
+lab=VSS}
 N 1740 -270 1740 -220 {
-lab=GND}
+lab=VSS}
 N 1720 -220 1740 -220 {
-lab=GND}
+lab=VSS}
 N 1580 -240 1580 -110 {
-lab=GND}
+lab=VSS}
 N 1720 -240 1720 -110 {
-lab=GND}
+lab=VSS}
 N 1240 -110 1870 -110 {
-lab=GND}
+lab=VSS}
 N 1550 -110 1550 -100 {
-lab=GND}
+lab=VSS}
 N 1450 -130 1490 -130 {
-lab=GND}
+lab=VSS}
 N 1490 -180 1490 -130 {
-lab=GND}
+lab=VSS}
 N 1450 -180 1490 -180 {
-lab=GND}
+lab=VSS}
 N 1210 -130 1240 -130 {
-lab=GND}
+lab=VSS}
 N 1210 -180 1210 -130 {
-lab=GND}
+lab=VSS}
 N 1220 -180 1240 -180 {
-lab=GND}
+lab=VSS}
 N 1210 -180 1220 -180 {
-lab=GND}
+lab=VSS}
 N 1870 -310 1910 -310 {
-lab=GND}
+lab=VSS}
 N 1910 -370 1910 -310 {
-lab=GND}
+lab=VSS}
 N 1870 -370 1910 -370 {
-lab=GND}
+lab=VSS}
 N 1870 -650 1930 -650 {
 lab=VDD}
 N 1930 -710 1930 -650 {
@@ -225,8 +225,8 @@ nf=1 mult=1
 model=nfet_01v8_lvt
 spiceprefix=X
 }
-C {devices/vdd.sym} 1590 -860 0 0 {name=l3 lab=VDD}
-C {devices/gnd.sym} 1550 -100 0 0 {name=l4 lab=GND}
+C {devices/iopin.sym} 1590 -860 3 0 {name=p3 lab=VDD}
+C {devices/iopin.sym} 1550 -100 1 0 {name=p4 lab=VSS}
 C {sky130_fd_pr/nfet_01v8_lvt.sym} 1560 -270 0 0 {name=M2
 L=3
 W=8

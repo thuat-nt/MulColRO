@@ -118,10 +118,10 @@ XR[0] io_oeb[1] vccd1 R_0_125
 .subckt ColROs VDD GROUND AIn0 AOut AIn1 AIn2 AIn3 AIn4 AIn5 REG0 REG1 REG2 REG3 REG4 REG5 REG6
 *.PININFO AOut:O REG1:I REG2:I REG3:I REG0:I REG5:I REG6:I REG4:I AIn0:I AIn1:I AIn2:I AIn3:I AIn4:I
 *+ AIn5:I GROUND:I VDD:I
-x1 AIn3 net1 AIn0 AIn1 AIn2 diffamp
-x2 REG3 REG2 net1 net2 AIn4 REG0 AIn5 REG1 REG5 REG4 integrator
-x7 AIn4 net3 AOut buffer
-x3 REG6 net2 net3 net1 mux2_1
+x1 AIn3 net1 AIn0 AIn1 AIn2 VDD GROUND diffamp
+x2 REG3 REG2 net1 net2 AIn4 REG0 AIn5 REG1 REG5 REG4 VDD GROUND integrator
+x7 AIn4 net3 AOut GROUND VDD buffer
+x3 REG6 net2 net3 net1 VDD GROUND mux2_1
 .ends
 
 
@@ -134,12 +134,12 @@ R1 in out sky130_fd_pr__res_generic_m1 W=10 L=10 m=1
 .ends
 
 
-* expanding   symbol:  diffamp/diffamp.sym # of pins=5
+* expanding   symbol:  diffamp/diffamp.sym # of pins=7
 ** sym_path: /run/media/thuat/build/cmos/MulColRO/xschem/diffamp/diffamp.sym
 ** sch_path: /run/media/thuat/build/cmos/MulColRO/xschem/diffamp/diffamp.sch
-.subckt diffamp PCAS OUT REF PIX GM_BIAS
-*.PININFO PCAS:I PIX:I REF:I GM_BIAS:I OUT:O
-M17 net4 GM_BIAS GND net4 sky130_fd_pr__nfet_01v8_lvt L=15 W=20 nf=2 m=1
+.subckt diffamp PCAS OUT REF PIX GM_BIAS VDD VSS
+*.PININFO PCAS:I PIX:I REF:I GM_BIAS:I OUT:O VSS:B VDD:B
+M17 net4 GM_BIAS VSS net4 sky130_fd_pr__nfet_01v8_lvt L=15 W=20 nf=2 m=1
 M8 net2 net1 VDD VDD sky130_fd_pr__pfet_01v8_lvt L=15 W=90 nf=3 m=1
 M1 net3 net1 VDD VDD sky130_fd_pr__pfet_01v8_lvt L=15 W=90 nf=3 m=1
 M2 OUT PCAS net2 VDD sky130_fd_pr__pfet_01v8_lvt L=3 W=90 nf=3 m=1
@@ -149,100 +149,98 @@ M6 net1 REF net4 net4 sky130_fd_pr__nfet_01v8_lvt L=3.5 W=800 nf=35 m=1
 .ends
 
 
-* expanding   symbol:  Integrator/integrator.sym # of pins=10
+* expanding   symbol:  Integrator/integrator.sym # of pins=12
 ** sym_path: /run/media/thuat/build/cmos/MulColRO/xschem/Integrator/integrator.sym
 ** sch_path: /run/media/thuat/build/cmos/MulColRO/xschem/Integrator/integrator.sch
-.subckt integrator sw2 sw1 intin intout opbias en Vtune rst sw4 sw3
-*.PININFO intin:I Vtune:I intout:O opbias:I sw1:I sw2:I rst:I en:I sw3:I sw4:I
-C1 net4 intout sky130_fd_pr__cap_mim_m3_1 W=50 L=50 m=1
-C2 net3 intout sky130_fd_pr__cap_mim_m3_1 W=50 L=50 m=1
-x9 sw2 net3 net2 switch
-x1 sw1 net4 net2 switch
-x3 Vtune intin curr_mir
-x4 opbias net1 net2 intout opamp
-x5 rst intout net2 switch
-x6 en net1 GND switch
-x7 net5 en not
-x2 net5 net2 intin switch
-C3 net6 intout sky130_fd_pr__cap_mim_m3_1 W=50 L=50 m=1
-x10 sw3 net6 net2 switch
-C4 net7 intout sky130_fd_pr__cap_mim_m3_1 W=50 L=50 m=1
-x8 sw4 net7 net2 switch
+.subckt integrator sw2 sw1 intin intout opbias en Vtune rst sw4 sw3 VDD VSS
+*.PININFO intin:I Vtune:I intout:O opbias:I sw1:I sw2:I rst:I en:I sw3:I sw4:I VDD:B VSS:B
+C1 net3 intout sky130_fd_pr__cap_mim_m3_1 W=50 L=50 m=1
+C2 net2 intout sky130_fd_pr__cap_mim_m3_1 W=50 L=50 m=1
+x9 sw2 net2 net1 VSS switch
+x1 sw1 net3 net1 VSS switch
+x3 Vtune intin VDD VSS curr_mir
+x4 opbias VSS net1 intout VSS VDD opamp
+x5 rst intout net1 VSS switch
+x6 en VSS intin VSS switch
+x7 VDD en VDD VSS not
+x2 VDD net1 intin VSS switch
+C3 net4 intout sky130_fd_pr__cap_mim_m3_1 W=50 L=50 m=1
+x10 sw3 net4 net1 VSS switch
+C4 net5 intout sky130_fd_pr__cap_mim_m3_1 W=50 L=50 m=1
+x8 sw4 net5 net1 VSS switch
 .ends
 
 
-* expanding   symbol:  buffer/buffer.sym # of pins=3
+* expanding   symbol:  buffer/buffer.sym # of pins=5
 ** sym_path: /run/media/thuat/build/cmos/MulColRO/xschem/buffer/buffer.sym
 ** sch_path: /run/media/thuat/build/cmos/MulColRO/xschem/buffer/buffer.sch
-.subckt buffer opbias in out
-*.PININFO in:I opbias:I out:O
-x1 opbias in out out opamp
+.subckt buffer opbias in out VSS VDD
+*.PININFO in:I opbias:I out:O VSS:B VDD:B
+x1 opbias in out out VSS VDD opamp
 .ends
 
 
-* expanding   symbol:  mux2_1/mux2_1.sym # of pins=4
+* expanding   symbol:  mux2_1/mux2_1.sym # of pins=6
 ** sym_path: /run/media/thuat/build/cmos/MulColRO/xschem/mux2_1/mux2_1.sym
 ** sch_path: /run/media/thuat/build/cmos/MulColRO/xschem/mux2_1/mux2_1.sch
-.subckt mux2_1 SEL0 IN1 OUT IN0
-*.PININFO SEL0:I OUT:O IN1:I IN0:I
-x1 net1 SEL0 not
-x6 SEL0 OUT IN1 switch
-x5 net1 OUT IN0 switch
+.subckt mux2_1 SEL0 IN1 OUT IN0 VDD VSS
+*.PININFO SEL0:I OUT:O IN1:I IN0:I VDD:B VSS:B
+x1 VDD SEL0 VDD VSS not
+x6 VDD OUT IN1 VSS switch
+x5 VDD OUT IN0 VSS switch
 .ends
 
 
-* expanding   symbol:  switch/switch.sym # of pins=3
+* expanding   symbol:  switch/switch.sym # of pins=5
 ** sym_path: /run/media/thuat/build/cmos/MulColRO/xschem/switch/switch.sym
 ** sch_path: /run/media/thuat/build/cmos/MulColRO/xschem/switch/switch.sch
-.subckt switch toggle out in
-*.PININFO toggle:I in:I out:O
-x1 net1 toggle not
+.subckt switch VDD out in VSS
+*.PININFO toggle:I in:I out:O VDD:B VSS:B
+x1 VDD toggle net1 VSS not
 M26 out net1 in VDD sky130_fd_pr__pfet_01v8_lvt L=3 W=200 nf=5 m=1
-M17 in toggle out GND sky130_fd_pr__nfet_01v8_lvt L=3 W=200 nf=5 m=1
+M17 in toggle out VSS sky130_fd_pr__nfet_01v8_lvt L=3 W=200 nf=5 m=1
 .ends
 
 
-* expanding   symbol:  current_mirror/curr_mir.sym # of pins=2
+* expanding   symbol:  current_mirror/curr_mir.sym # of pins=4
 ** sym_path: /run/media/thuat/build/cmos/MulColRO/xschem/current_mirror/curr_mir.sym
 ** sch_path: /run/media/thuat/build/cmos/MulColRO/xschem/current_mirror/curr_mir.sch
-.subckt curr_mir Vtune Ib
-*.PININFO Vtune:I Ib:B
-M1 net1 net1 GND GND sky130_fd_pr__nfet_01v8_lvt L=2 W=50 nf=1 m=1
-M2 Ib net1 GND GND sky130_fd_pr__nfet_01v8_lvt L=25 W=4 nf=1 m=1
+.subckt curr_mir Vtune Ib VDD VSS
+*.PININFO VSS:B VDD:B Vtune:I Ib:B
+M1 net1 net1 VSS VSS sky130_fd_pr__nfet_01v8_lvt L=2 W=50 nf=1 m=1
+M2 Ib net1 VSS VSS sky130_fd_pr__nfet_01v8_lvt L=25 W=4 nf=1 m=1
 M10 net1 Vtune VDD VDD sky130_fd_pr__pfet_01v8_lvt L=10 W=10 nf=1 m=1
 .ends
 
 
-* expanding   symbol:  opamp/opamp.sym # of pins=4
+* expanding   symbol:  opamp/opamp.sym # of pins=6
 ** sym_path: /run/media/thuat/build/cmos/MulColRO/xschem/opamp/opamp.sym
 ** sch_path: /run/media/thuat/build/cmos/MulColRO/xschem/opamp/opamp.sch
-.subckt opamp opbias inp inn out
-*.PININFO inp:I inn:I opbias:I out:O
+.subckt opamp opbias inp inn out VSS VDD
+*.PININFO inp:I inn:I opbias:I out:O VDD:B VSS:B
 C1 net5 out sky130_fd_pr__cap_mim_m3_1 W=2 L=4 m=1
 C2 out net4 sky130_fd_pr__cap_mim_m3_1 W=2 L=4 m=1
 M26 net2 opbias VDD VDD sky130_fd_pr__pfet_01v8_lvt L=3 W=10 nf=4 m=1
 M3 net1 net1 VDD VDD sky130_fd_pr__pfet_01v8_lvt L=3 W=10 nf=2 m=1
 M4 net5 net1 VDD VDD sky130_fd_pr__pfet_01v8_lvt L=3 W=10 nf=2 m=1
 M10 out net5 VDD VDD sky130_fd_pr__pfet_01v8_lvt L=3 W=100 nf=5 m=1
-M17 out net4 GND GND sky130_fd_pr__nfet_01v8_lvt L=3 W=80 nf=5 m=1
-M19 net4 net3 GND GND sky130_fd_pr__nfet_01v8_lvt L=3 W=5 nf=1 m=1
-M20 net3 net3 GND GND sky130_fd_pr__nfet_01v8_lvt L=3 W=5 nf=1 m=1
-M2 net1 net4 GND GND sky130_fd_pr__nfet_01v8_lvt L=3 W=8 nf=1 m=1
-M5 net5 net3 GND GND sky130_fd_pr__nfet_01v8_lvt L=3 W=8 nf=1 m=1
+M17 out net4 VSS VSS sky130_fd_pr__nfet_01v8_lvt L=3 W=80 nf=5 m=1
+M19 net4 net3 VSS VSS sky130_fd_pr__nfet_01v8_lvt L=3 W=5 nf=1 m=1
+M20 net3 net3 VSS VSS sky130_fd_pr__nfet_01v8_lvt L=3 W=5 nf=1 m=1
+M2 net1 net4 VSS VSS sky130_fd_pr__nfet_01v8_lvt L=3 W=8 nf=1 m=1
+M5 net5 net3 VSS VSS sky130_fd_pr__nfet_01v8_lvt L=3 W=8 nf=1 m=1
 M1 net3 inn net2 VDD sky130_fd_pr__pfet_01v8_lvt L=3 W=15 nf=3 m=1
 M6 net4 inp net2 VDD sky130_fd_pr__pfet_01v8_lvt L=3 W=15 nf=3 m=1
 .ends
 
 
-* expanding   symbol:  not/not.sym # of pins=2
+* expanding   symbol:  not/not.sym # of pins=4
 ** sym_path: /run/media/thuat/build/cmos/MulColRO/xschem/not/not.sym
 ** sch_path: /run/media/thuat/build/cmos/MulColRO/xschem/not/not.sch
-.subckt not out in
-*.PININFO in:I out:O
+.subckt not VDD in out VSS
+*.PININFO in:I out:O VDD:B VSS:B
 M10 out in VDD VDD sky130_fd_pr__pfet_01v8_lvt L=0.35 W=1 nf=1 m=1
-M1 out in GND GND sky130_fd_pr__nfet_01v8_lvt L=0.15 W=1 nf=1 m=1
+M1 out in VSS VSS sky130_fd_pr__nfet_01v8_lvt L=0.15 W=1 nf=1 m=1
 .ends
 
-.GLOBAL GND
-.GLOBAL VDD
 .end
