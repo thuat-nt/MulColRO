@@ -32,9 +32,9 @@ lab=out}
 N 40 120 40 150 {
 lab=VSS}
 N 130 120 130 150 {
-lab=VSS}
+lab=in}
 N 130 -10 130 20 {
-lab=VDD}
+lab=out}
 N -40 -10 -40 120 {
 lab=VSS}
 N -40 120 40 120 {
@@ -47,9 +47,12 @@ N -100 190 -100 220 {
 lab=toggle}
 N 130 190 130 220 {
 lab=toggle}
-N 10 -50 130 -50 {}
-N 130 20 180 20 {}
-N 80 120 130 120 {}
+N 10 -50 130 -50 {
+lab=#net1}
+N 130 20 180 20 {
+lab=out}
+N 80 120 130 120 {
+lab=in}
 C {devices/ipin.sym} -130 -50 0 0 {name=p1 lab=toggle}
 C {devices/ipin.sym} 70 70 0 0 {name=p2 lab=in}
 C {devices/opin.sym} 190 70 0 0 {name=p3 lab=out}
