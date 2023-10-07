@@ -1,7 +1,7 @@
 magic
 tech sky130A
 magscale 1 2
-timestamp 1696660408
+timestamp 1696661428
 << metal1 >>
 rect 18616 30732 19744 30738
 rect 17426 30630 19744 30732
@@ -121,15 +121,15 @@ rect 11752 16358 11810 16490
 rect 5368 16308 11810 16358
 rect 11550 16282 11810 16308
 use not  x1
-timestamp 1696652640
+timestamp 1696661316
 transform 0 -1 6186 1 0 12070
 box 472 -578 1868 1036
 use switch  x5
-timestamp 1696660267
+timestamp 1696661428
 transform 0 1 8322 -1 0 29778
 box -53 -918 8642 10274
 use switch  x6
-timestamp 1696660267
+timestamp 1696661428
 transform 0 1 8340 -1 0 20784
 box -53 -918 8642 10274
 << labels >>
