@@ -32,7 +32,7 @@ lab=out}
 N 40 120 40 150 {
 lab=VSS}
 N 130 120 130 150 {
-lab=in}
+lab=VSS}
 N 130 -10 130 20 {
 lab=out}
 N -40 -10 -40 120 {
@@ -51,14 +51,14 @@ N 10 -50 130 -50 {
 lab=#net1}
 N 130 20 180 20 {
 lab=out}
-N 80 120 130 120 {
-lab=in}
+N 40 120 130 120 {
+lab=VSS}
 C {devices/ipin.sym} -130 -50 0 0 {name=p1 lab=toggle}
 C {devices/ipin.sym} 70 70 0 0 {name=p2 lab=in}
 C {devices/opin.sym} 190 70 0 0 {name=p3 lab=out}
 C {not/not.sym} 70 -50 0 0 {name=x1}
 C {sky130_fd_pr/pfet_01v8_lvt.sym} 130 -30 3 1 {name=M26
-L=3
+L=0.35
 W=200
 body=VDD
 nf=5 mult=1
