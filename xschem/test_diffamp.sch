@@ -57,6 +57,8 @@ VDD VDD 0 dc 1.8
 VSS VSS 0 dc 0
 VBIAS bias 0 dc 0.8
 VPCAS pcas 0 dc 0.6
+.param mc_mm_switch=0
+.param mc_pr_switch=0
 .control
 save all
 tran 0.1us 100us 

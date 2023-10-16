@@ -50,9 +50,12 @@ VIN INP 0 dc sin (0.9 0.5 100000)
 VDD VDD 0 dc 1.8
 VSS VSS 0 dc 0
 VBIAS bias 0 dc 0.2
+.param mc_mm_switch=0
+.param mc_pr_switch=0
 .control
 save all
-tran 0.5us 100us 
+set RELTOL=0.01
+tran 1us 100us 
 write test_opamp.raw
 .endc"}
 C {devices/capa.sym} 140 -110 0 0 {name=C1

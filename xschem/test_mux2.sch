@@ -46,6 +46,8 @@ VDD VDD 0 dc 1.8
 VSS VSS 0 dc 0
 VSEL0 SEL0 0 dc PULSE (0 1.8 0 1ns 1ns 20us 40us)
 VIN0 IN0 0 dc sin (0.9 0.5 200000)
+.param mc_mm_switch=0
+.param mc_pr_switch=0
 .control
 save all
 tran 0.1us 100us 
