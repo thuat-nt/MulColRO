@@ -1,6 +1,6 @@
 magic
 tech sky130A
-timestamp 1696677893
+timestamp 1698053408
 << locali >>
 rect 7512 16935 8013 16978
 rect 7512 16158 7547 16935
@@ -370,11 +370,11 @@ rect 20897 -1276 20949 -1117
 rect 21068 -1276 21174 -1117
 rect 20897 -1300 21174 -1276
 use switch  x1
-timestamp 1696676133
+timestamp 1698053408
 transform 0 1 18403 1 0 2273
 box -20 -459 4321 5137
 use switch  x2
-timestamp 1696676133
+timestamp 1698053408
 transform 0 1 11967 -1 0 6543
 box -20 -459 4321 5137
 use curr_mir  x3
@@ -386,27 +386,27 @@ timestamp 1696521366
 transform 1 0 15179 0 -1 1876
 box 3034 622 9644 4507
 use switch  x5
-timestamp 1696676133
+timestamp 1698053408
 transform 0 1 18348 1 0 6822
 box -20 -459 4321 5137
 use switch  x6
-timestamp 1696676133
+timestamp 1698053408
 transform 0 1 11917 -1 0 1394
 box -20 -459 4321 5137
 use not  x7
-timestamp 1696661316
+timestamp 1698046104
 transform 1 0 10262 0 1 3113
 box 236 -289 934 518
 use switch  x8
-timestamp 1696676133
+timestamp 1698053408
 transform 0 1 18369 1 0 11474
 box -20 -459 4321 5137
 use switch  x9
-timestamp 1696676133
+timestamp 1698053408
 transform 0 -1 17179 1 0 7009
 box -20 -459 4321 5137
 use switch  x10
-timestamp 1696676133
+timestamp 1698053408
 transform 0 -1 17179 1 0 11496
 box -20 -459 4321 5137
 use sky130_fd_pr__cap_mim_m3_1_3HBNLG  XC1
