@@ -57,8 +57,8 @@ model=nfet_01v8_lvt
 spiceprefix=X
 }
 C {sky130_fd_pr/nfet_01v8_lvt.sym} 20 40 0 0 {name=M2
-L=25
-W=4
+L=2
+W=50
 nf=1 mult=1
 model=nfet_01v8_lvt
 spiceprefix=X
