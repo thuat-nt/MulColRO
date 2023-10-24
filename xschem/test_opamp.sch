@@ -8,7 +8,7 @@ E {}
 N -30 -90 -30 -60 {
 lab=bias}
 N -130 -180 -100 -180 {
-lab=OUT}
+lab=INN}
 N 60 -140 90 -140 {
 lab=OUT}
 N 10 -210 10 -180 {
@@ -19,16 +19,20 @@ N 90 -140 140 -140 {
 lab=OUT}
 N 140 -140 160 -140 {
 lab=OUT}
-N -130 -100 -100 -100 {
-lab=INP}
 N -200 -180 -130 -180 {
-lab=OUT}
+lab=INN}
 N -200 -290 -200 -180 {
-lab=OUT}
-N -200 -290 110 -290 {
-lab=OUT}
+lab=INN}
 N 110 -290 110 -140 {
 lab=OUT}
+N -200 -290 -100 -290 {
+lab=INN}
+N -40 -290 110 -290 {
+lab=OUT}
+N -230 -180 -200 -180 {
+lab=INN}
+N -100 -100 -100 -80 {
+lab=INP}
 C {devices/lab_pin.sym} -30 -60 3 0 {name=p1 sig_type=std_logic lab=bias}
 C {devices/lab_pin.sym} 10 -210 3 1 {name=p5 sig_type=std_logic lab=VDD}
 C {devices/lab_pin.sym} 10 -80 1 1 {name=p6 sig_type=std_logic lab=VSS}
@@ -41,21 +45,22 @@ value="
 
 "
 spice_ignore=false}
-C {devices/simulator_commands_shown.sym} 310 -230 0 0 {name=COMMANDS
+C {devices/simulator_commands_shown.sym} 240 -240 0 0 {name=COMMANDS
 simulator=ngspice
 only_toplevel=false 
 value="
 * ngspice commands
-VIN INP 0 dc sin (0.9 0.5 100000)
+VINN INN 0 dc sin (0.9 1m 10000)
+VINP INP 0 dc 0.9
 VDD VDD 0 dc 1.8
 VSS VSS 0 dc 0
-VBIAS bias 0 dc 0.2
+VBIAS bias 0 dc 0.7
 .param mc_mm_switch=0
 .param mc_pr_switch=0
 .control
-save all
 set RELTOL=0.01
-tran 1us 100us 
+save all
+tran 10us 1000us 
 write test_opamp.raw
 .endc"}
 C {devices/capa.sym} 140 -110 0 0 {name=C1
@@ -65,5 +70,17 @@ footprint=1206
 device="ceramic capacitor"}
 C {devices/lab_pin.sym} 160 -140 0 1 {name=p4 sig_type=std_logic lab=OUT}
 C {devices/lab_pin.sym} 140 -80 1 1 {name=p8 sig_type=std_logic lab=VSS}
-C {devices/lab_pin.sym} -130 -100 0 0 {name=p3 sig_type=std_logic lab=INP}
 C {opamp/opamp.sym} -10 -310 0 0 {name=x1}
+C {devices/res.sym} -200 -150 0 0 {name=R1
+value=1k
+footprint=1206
+device=resistor
+m=1}
+C {devices/res.sym} -70 -290 1 0 {name=R2
+value=1k
+footprint=1206
+device=resistor
+m=1}
+C {devices/lab_pin.sym} -200 -120 1 1 {name=p2 sig_type=std_logic lab=VSS}
+C {devices/lab_pin.sym} -230 -180 0 0 {name=p3 sig_type=std_logic lab=INN}
+C {devices/lab_pin.sym} -100 -80 1 1 {name=p7 sig_type=std_logic lab=INP}

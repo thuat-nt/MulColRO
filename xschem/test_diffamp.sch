@@ -36,13 +36,7 @@ value="
 
 "
 spice_ignore=false}
-C {devices/capa.sym} 250 -100 0 0 {name=C1
-m=1
-value=1p
-footprint=1206
-device="ceramic capacitor"}
 C {devices/lab_pin.sym} 270 -130 0 1 {name=p4 sig_type=std_logic lab=OUT}
-C {devices/lab_pin.sym} 250 -70 1 1 {name=p8 sig_type=std_logic lab=VSS}
 C {diffamp/diffamp.sym} 20 -100 0 0 {name=x1}
 C {devices/lab_pin.sym} -160 -90 0 0 {name=p3 sig_type=std_logic lab=INPIX}
 C {devices/lab_pin.sym} -160 -130 0 0 {name=p7 sig_type=std_logic lab=pcas}
@@ -53,6 +47,7 @@ value="
 * ngspice commands
 VINPIX INPIX 0 dc sin (0.9 0.0005 100000)
 VINREF INREF 0 dc 0.9
+VSSR OUT VSSR dc 0
 VDD VDD 0 dc 1.8
 VSS VSS 0 dc 0
 VBIAS bias 0 dc 0.8
@@ -64,3 +59,10 @@ save all
 tran 0.1us 100us 
 write test_diffamp.raw
 .endc"}
+C {devices/lab_pin.sym} 260 -90 2 1 {name=p9 sig_type=std_logic lab=VSSR}
+C {devices/capa.sym} 260 -60 0 0 {name=C1
+m=1
+value=1p
+footprint=1206
+device="ceramic capacitor"}
+C {devices/lab_pin.sym} 260 -30 1 1 {name=p8 sig_type=std_logic lab=VSS}

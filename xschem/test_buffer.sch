@@ -37,17 +37,17 @@ simulator=ngspice
 only_toplevel=false 
 value="
 * ngspice commands
-VIN IN 0 dc sin (0.9 0.5 100000)
+VIN IN 0 dc sin (0.9 0.5 10000)
 VDD VDD 0 dc 1.8
 VSS VSS 0 dc 0
-VBIAS bias 0 dc 0.2
+VBIAS bias 0 dc 0.7
 .param mc_mm_switch=0
 .param mc_pr_switch=0
 .control
 save all
 set RELTOL=0.01
 *set ABSTOL=1E-9
-tran 1us 100us
+tran 10us 1000us
 write test_buffer.raw
 .endc
 .end"}

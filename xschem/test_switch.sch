@@ -45,6 +45,8 @@ VIN in 0 dc 1.8
 VDD VDD 0 dc 1.8
 VSS VSS 0 dc 0
 VT toggle 0 dc 1.8
+.param mc_mm_switch=0
+.param mc_pr_switch=0
 .control
 save all
 *tran 1us 100us
