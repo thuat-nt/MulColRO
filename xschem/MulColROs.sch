@@ -5,7 +5,7 @@ K {}
 V {}
 S {}
 E {}
-C {ColROs.sym} 10 -30 0 0 {name=MulColROs[3:0]}
+C {ColROs.sym} 10 -30 0 0 {name=xMulColROs[3:0]}
 C {devices/ipin.sym} -400 0 0 0 {name=p2 lab=REG1}
 C {devices/ipin.sym} -400 40 0 0 {name=p3 lab=REG2}
 C {devices/ipin.sym} -400 80 0 0 {name=p4 lab=REG3}
