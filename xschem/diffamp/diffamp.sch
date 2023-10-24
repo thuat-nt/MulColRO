@@ -39,8 +39,6 @@ N 830 -400 860 -400 {
 lab=REF}
 N 570 -370 570 -320 {
 lab=#net4}
-N 570 -320 790 -320 {
-lab=#net4}
 N 790 -370 790 -320 {
 lab=#net4}
 N 670 -320 670 -300 {
@@ -49,18 +47,12 @@ N 670 -240 670 -220 {
 lab=VSS}
 N 610 -270 630 -270 {
 lab=GM_BIAS}
-N 670 -270 730 -270 {
-lab=#net4}
-N 730 -320 730 -270 {
-lab=#net4}
-N 730 -400 730 -320 {
-lab=#net4}
 N 730 -400 790 -400 {
-lab=#net4}
+lab=VSS}
 N 570 -400 630 -400 {
-lab=#net4}
+lab=VSS}
 N 630 -400 730 -400 {
-lab=#net4}
+lab=VSS}
 N 530 -690 570 -690 {
 lab=VDD}
 N 530 -740 530 -690 {
@@ -81,6 +73,15 @@ N 790 -550 830 -550 {
 lab=VDD}
 N 830 -690 830 -550 {
 lab=VDD}
+N 570 -320 670 -320 {
+lab=#net4}
+N 670 -320 790 -320 {
+lab=#net4}
+N 670 -230 690 -230 {
+lab=VSS}
+N 690 -400 690 -230 {
+lab=VSS}
+N 670 -270 690 -270 {}
 C {devices/ipin.sym} 650 -510 3 0 {name=p3 lab=PCAS}
 C {devices/ipin.sym} 500 -400 0 0 {name=p4 lab=PIX}
 C {devices/ipin.sym} 860 -400 2 0 {name=p5 lab=REF}
