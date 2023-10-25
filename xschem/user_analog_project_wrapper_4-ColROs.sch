@@ -146,7 +146,7 @@ C {devices/lab_pin.sym} 4130 410 0 0 {name=l20 sig_type=std_logic lab=vssd1}
 C {devices/lab_pin.sym} 4130 530 0 0 {name=l21 sig_type=std_logic lab=vssd1}
 C {devices/lab_pin.sym} 3630 670 0 0 {name=l22 sig_type=std_logic lab=vssd1}
 C {devices/lab_pin.sym} 4130 550 0 0 {name=l23 sig_type=std_logic lab=io_clamp_high[0]}
-C {devices/lab_pin.sym} 3630 710 0 0 {name=l28 sig_type=std_logic lab=io_oeb[13:0]}
+C {devices/lab_pin.sym} 3630 710 0 0 {name=l28 sig_type=std_logic lab=io_oeb[15:0]}
 C {devices/lab_pin.sym} 3630 960 0 0 {name=l29 sig_type=std_logic lab=vccd1}
 C {devices/lab_pin.sym} 3720 -270 2 1 {name=l33 sig_type=std_logic lab=gpio_analog[0]}
 C {devices/lab_pin.sym} 3720 -250 2 1 {name=l34 sig_type=std_logic lab=gpio_analog[4:1]}
