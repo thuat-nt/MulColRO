@@ -1,6 +1,6 @@
 magic
 tech sky130A
-timestamp 1698140848
+timestamp 1698307532
 << metal4 >>
 rect 37444 386004 38883 405005
 rect 37444 384883 37557 386004
@@ -519,34 +519,32 @@ rect 140038 301409 179094 302211
 rect 102174 301404 179094 301409
 rect 62972 301369 179094 301404
 rect 61654 301313 179094 301369
-use ColROs  MulColROs[0]
-timestamp 1698140848
+use ColROs  xMulColROs[0]
+timestamp 1698144546
 transform 0 1 156602 1 0 318713
 box 4511 -9280 67981 26370
-use ColROs  MulColROs[1]
-timestamp 1698140848
+use ColROs  xMulColROs[1]
+timestamp 1698144546
 transform 0 1 117643 1 0 318433
 box 4511 -9280 67981 26370
-use ColROs  MulColROs[2]
-timestamp 1698140848
+use ColROs  xMulColROs[2]
+timestamp 1698144546
 transform 0 1 79800 1 0 318148
 box 4511 -9280 67981 26370
-use ColROs  MulColROs[3]
-timestamp 1698140848
+use ColROs  xMulColROs[3]
+timestamp 1698144546
 transform 0 1 40581 1 0 318102
 box 4511 -9280 67981 26370
 << labels >>
-rlabel metal5 31084 387420 183986 393808 1 VSS
-port 1 nsew
 rlabel metal5 31093 395870 183995 402258 1 VDD
 port 2 nsew
-rlabel metal4 37444 384753 38883 405005 1 AOut3
+rlabel metal4 37444 384753 38883 405005 1 AOut[3]
 port 3 nsew
-rlabel metal4 76674 384794 78113 405046 1 AOut2
+rlabel metal4 76674 384794 78113 405046 1 AOut[2]
 port 4 nsew
-rlabel metal4 114584 385093 116023 405345 1 AOut1
+rlabel metal4 114584 385093 116023 405345 1 AOut[1]
 port 5 nsew
-rlabel metal4 153451 385273 154890 405525 1 AOut0
+rlabel metal4 153451 385273 154890 405525 1 AOut[0]
 port 6 nsew
 rlabel metal5 35607 321065 153155 322075 1 REG6
 port 7 nsew
@@ -572,12 +570,14 @@ rlabel metal5 35733 303097 73822 304107 1 AIn2
 port 17 nsew
 rlabel metal5 35799 301375 73831 302385 1 AIn0
 port 18 nsew
-rlabel metal4 59447 300083 60876 321960 1 AIn_3
+rlabel metal4 59447 300083 60876 321960 1 AIn[3]
 port 19 nsew
-rlabel metal4 98645 300221 100074 322098 1 AIn_2
+rlabel metal4 98645 300221 100074 322098 1 AIn[2]
 port 20 nsew
-rlabel metal4 136556 299967 137985 321844 1 AIn_1
+rlabel metal4 136556 299967 137985 321844 1 AIn[1]
 port 21 nsew
-rlabel metal4 175453 300252 176882 322129 1 AIn_0
+rlabel metal4 175453 300252 176882 322129 1 AIn[0]
 port 22 nsew
+rlabel metal5 31084 387420 183986 393808 1 GROUND
+port 23 nsew
 << end >>
