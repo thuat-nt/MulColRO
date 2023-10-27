@@ -1,7 +1,11 @@
 * NGSPICE file created from user_analog_project_wrapper.ext - technology: sky130A
 
-.subckt sky130_fd_pr__res_generic_m3_DPAT6Q m3_n1100_n87# m3_n1100_30#
-R0 m3_n1100_n87# m3_n1100_30# sky130_fd_pr__res_generic_m3 w=11 l=0.3
+.subckt sky130_fd_pr__res_generic_m1_SAT4UL m1_n1000_n1057# m1_n1000_1000#
+R0 m1_n1000_n1057# m1_n1000_1000# sky130_fd_pr__res_generic_m1 w=10 l=10
+.ends
+
+.subckt R_0_125 R1/m1_n1000_n1057# R1/m1_n1000_1000#
+XR1 R1/m1_n1000_n1057# R1/m1_n1000_1000# sky130_fd_pr__res_generic_m1_SAT4UL
 .ends
 
 .subckt sky130_fd_pr__pfet_01v8_lvt_79GNHJ a_4558_n3000# a_n1500_n3097# a_n4616_n3000#
@@ -260,12 +264,20 @@ Xx3 REG6 x3/IN1 x3/IN0 VDD x7/in VSUBS mux2_1
 Xx7 AIn4 x7/in AOut VDD VSUBS buffer
 .ends
 
-.subckt sky130_fd_pr__res_generic_m1_SAT4UL m1_n1000_n1057# m1_n1000_1000#
-R0 m1_n1000_n1057# m1_n1000_1000# sky130_fd_pr__res_generic_m1 w=10 l=10
+.subckt MulColROs VDD AOut[3] AOut[2] AOut[1] AOut[0] REG6 REG5 REG4 REG3 REG2 REG1
++ REG0 AIn5 AIn4 AIn3 AIn2 AIn0 AIn[3] AIn[2] AIn[1] AIn[0] VSUBS
+XxMulColROs[3] VDD AIn0 AIn[3] AIn2 AIn3 AIn4 AIn5 REG0 REG1 REG2 REG3 REG4 REG5 REG6
++ AOut[3] VSUBS ColROs
+XxMulColROs[2] VDD AIn0 AIn[2] AIn2 AIn3 AIn4 AIn5 REG0 REG1 REG2 REG3 REG4 REG5 REG6
++ AOut[2] VSUBS ColROs
+XxMulColROs[1] VDD AIn0 AIn[1] AIn2 AIn3 AIn4 AIn5 REG0 REG1 REG2 REG3 REG4 REG5 REG6
++ AOut[1] VSUBS ColROs
+XxMulColROs[0] VDD AIn0 AIn[0] AIn2 AIn3 AIn4 AIn5 REG0 REG1 REG2 REG3 REG4 REG5 REG6
++ AOut[0] VSUBS ColROs
 .ends
 
-.subckt R_0_125 R1/m1_n1000_n1057# R1/m1_n1000_1000#
-XR1 R1/m1_n1000_n1057# R1/m1_n1000_1000# sky130_fd_pr__res_generic_m1_SAT4UL
+.subckt sky130_fd_pr__res_generic_m3_DPAT6Q m3_n1100_n87# m3_n1100_30#
+R0 m3_n1100_n87# m3_n1100_30# sky130_fd_pr__res_generic_m3 w=11 l=0.3
 .ends
 
 .subckt user_analog_project_wrapper gpio_analog[0] gpio_analog[10] gpio_analog[11]
@@ -374,27 +386,31 @@ XR1 R1/m1_n1000_n1057# R1/m1_n1000_1000# sky130_fd_pr__res_generic_m1_SAT4UL
 + wbs_dat_o[30] wbs_dat_o[31] wbs_dat_o[3] wbs_dat_o[4] wbs_dat_o[5] wbs_dat_o[6]
 + wbs_dat_o[7] wbs_dat_o[8] wbs_dat_o[9] wbs_sel_i[0] wbs_sel_i[1] wbs_sel_i[2] wbs_sel_i[3]
 + wbs_stb_i wbs_we_i
+XXR[15] vccd1 io_oeb[15] R_0_125
+XXR[14] vccd1 io_oeb[14] R_0_125
+Xx1 vccd1 io_analog[3] io_analog[2] io_analog[1] io_analog[0] io_in[0] io_in[1] io_in[2]
++ io_in[3] io_in[4] io_in[5] io_in[6] gpio_analog[8] gpio_analog[7] gpio_analog[6]
++ gpio_analog[5] gpio_analog[0] gpio_analog[4] gpio_analog[3] gpio_analog[2] gpio_analog[1]
++ vssd1 MulColROs
 XR1 vssd1 io_clamp_low[2] sky130_fd_pr__res_generic_m3_DPAT6Q
-Xx3 vccd1 gpio_analog[6] gpio_analog[5] gpio_analog[4] gpio_analog[3] gpio_analog[2]
-+ gpio_analog[1] io_in[7] io_in[6] io_in[5] io_in[4] io_in[3] io_in[2] io_in[1] io_analog[0]
-+ vssd1 ColROs
+XXR[13] vccd1 io_oeb[13] R_0_125
 XR2 vssd1 io_clamp_high[2] sky130_fd_pr__res_generic_m3_DPAT6Q
-XXR[12] vccd1 io_oeb[13] R_0_125
-XXR[11] vccd1 io_oeb[12] R_0_125
+XXR[12] vccd1 io_oeb[12] R_0_125
+XXR[11] vccd1 io_oeb[11] R_0_125
 XR4 vssd1 io_clamp_low[1] sky130_fd_pr__res_generic_m3_DPAT6Q
-XXR[10] vccd1 io_oeb[11] R_0_125
+XXR[10] vccd1 io_oeb[10] R_0_125
 XR5 vssd1 io_clamp_high[1] sky130_fd_pr__res_generic_m3_DPAT6Q
 XR6 vssd1 io_clamp_low[0] sky130_fd_pr__res_generic_m3_DPAT6Q
 XR7 vssd1 io_clamp_high[0] sky130_fd_pr__res_generic_m3_DPAT6Q
-XXR[9] vccd1 io_oeb[10] R_0_125
-XXR[8] vccd1 io_oeb[9] R_0_125
-XXR[7] vccd1 io_oeb[8] R_0_125
-XXR[6] vccd1 io_oeb[7] R_0_125
-XXR[5] vccd1 io_oeb[6] R_0_125
-XXR[4] vccd1 io_oeb[5] R_0_125
-XXR[3] vccd1 io_oeb[4] R_0_125
-XXR[2] vccd1 io_oeb[3] R_0_125
-XXR[1] vccd1 io_oeb[2] R_0_125
-XXR[0] vccd1 io_oeb[1] R_0_125
+XXR[9] vccd1 io_oeb[9] R_0_125
+XXR[7] vccd1 io_oeb[7] R_0_125
+XXR[8] vccd1 io_oeb[8] R_0_125
+XXR[6] vccd1 io_oeb[6] R_0_125
+XXR[5] vccd1 io_oeb[5] R_0_125
+XXR[4] vccd1 io_oeb[4] R_0_125
+XXR[3] vccd1 io_oeb[3] R_0_125
+XXR[2] vccd1 io_oeb[2] R_0_125
+XXR[1] vccd1 io_oeb[1] R_0_125
+XXR[0] vccd1 io_oeb[0] R_0_125
 .ends
 
