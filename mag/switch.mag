@@ -217,7 +217,7 @@ use not  x1
 timestamp 1698123846
 transform -1 0 5462 0 1 4624
 box 472 -578 1868 1036
-use sky130_fd_pr__nfet_01v8_lvt_4833E6  XM1 ~/ColRO/mag
+use sky130_fd_pr__nfet_01v8_lvt_4833E6  XM1 
 timestamp 1698123815
 transform 1 0 6830 0 1 4780
 box -1812 -4210 1812 4210
