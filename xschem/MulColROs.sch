@@ -32,8 +32,8 @@ C {devices/lab_pin.sym} -400 80 2 0 {name=p32 sig_type=std_logic lab=REG3}
 C {devices/lab_pin.sym} -400 120 2 0 {name=p33 sig_type=std_logic lab=REG4}
 C {devices/lab_pin.sym} -400 160 2 0 {name=p34 sig_type=std_logic lab=REG5}
 C {devices/lab_pin.sym} -400 200 2 0 {name=p35 sig_type=std_logic lab=REG6}
-C {devices/iopin.sym} -390 -460 2 0 {name=p10 lab=GROUND}
-C {devices/lab_pin.sym} -390 -460 2 0 {name=p54 sig_type=std_logic lab=GROUND}
+C {devices/iopin.sym} -390 -460 2 0 {name=p10 lab=VSS}
+C {devices/lab_pin.sym} -390 -460 2 0 {name=p54 sig_type=std_logic lab=VSS}
 C {devices/iopin.sym} -390 -510 2 0 {name=p55 lab=VDD}
 C {devices/lab_pin.sym} -390 -510 2 0 {name=p56 sig_type=std_logic lab=VDD}
 C {devices/lab_pin.sym} -140 -30 0 0 {name=p1 sig_type=std_logic lab=REG0}
@@ -46,7 +46,7 @@ C {devices/lab_pin.sym} -140 90 0 0 {name=p22 sig_type=std_logic lab=REG6}
 C {devices/lab_pin.sym} -140 -150 0 0 {name=p23 sig_type=std_logic lab=AIn0}
 C {devices/lab_pin.sym} -140 -130 0 0 {name=p36 sig_type=std_logic lab=AIn[3:0]}
 C {devices/lab_pin.sym} 10 -200 1 0 {name=p37 sig_type=std_logic lab=VDD}
-C {devices/lab_pin.sym} 10 140 3 0 {name=p38 sig_type=std_logic lab=GROUND}
+C {devices/lab_pin.sym} 10 140 3 0 {name=p38 sig_type=std_logic lab=VSS}
 C {devices/lab_pin.sym} -140 -50 0 0 {name=p39 sig_type=std_logic lab=AIn5}
 C {devices/lab_pin.sym} -140 -70 0 0 {name=p40 sig_type=std_logic lab=AIn4}
 C {devices/lab_pin.sym} -140 -90 0 0 {name=p41 sig_type=std_logic lab=AIn3}
