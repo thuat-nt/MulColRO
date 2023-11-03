@@ -1,19 +1,19 @@
 magic
 tech sky130A
 magscale 1 2
-timestamp 1696661316
+timestamp 1698976668
 << locali >>
 rect 472 946 1284 1034
 rect 476 892 614 946
 rect 476 810 528 892
 rect 476 768 614 810
-rect 494 -432 1232 -360
-rect 494 -518 550 -432
-rect 636 -518 1232 -432
-rect 494 -578 1232 -518
+rect 494 -420 1232 -360
+rect 494 -530 542 -420
+rect 650 -530 1232 -420
+rect 494 -578 1232 -530
 << viali >>
 rect 528 810 614 892
-rect 550 -518 636 -432
+rect 542 -530 650 -420
 << metal1 >>
 rect 476 892 662 990
 rect 476 814 528 892
@@ -49,12 +49,12 @@ rect 1668 62 1868 70
 rect 492 -212 1004 -34
 rect 1106 -36 1412 -34
 rect 1106 -210 1410 -36
-rect 492 -432 700 -212
+rect 492 -420 700 -212
 rect 1308 -220 1410 -210
 rect 1020 -314 1086 -256
-rect 492 -518 550 -432
-rect 636 -518 700 -432
-rect 492 -578 700 -518
+rect 492 -530 542 -420
+rect 650 -530 700 -420
+rect 492 -578 700 -530
 << via1 >>
 rect 1010 296 1100 360
 rect 614 156 686 232
@@ -88,8 +88,8 @@ flabel metal1 512 74 712 274 0 FreeSans 256 0 0 0 in
 port 1 nsew
 flabel metal1 1668 62 1868 262 0 FreeSans 256 0 0 0 out
 port 0 nsew
-rlabel locali 846 -562 1138 -468 1 GROUND
-port 3 nsew
 rlabel locali 472 946 1284 1034 1 VDD
 port 4 nsew
+rlabel locali 494 -578 1232 -360 1 VSS
+port 5 nsew
 << end >>
