@@ -578,6 +578,6 @@ rlabel metal4 136556 299967 137985 321844 1 AIn[1]
 port 21 nsew
 rlabel metal4 175453 300252 176882 322129 1 AIn[0]
 port 22 nsew
-rlabel metal5 31084 387420 183986 393808 1 GROUND
+rlabel metal5 31084 387420 183986 393808 1 VSS
 port 23 nsew
 << end >>
