@@ -1710,6 +1710,6 @@ rlabel metal3 59962 -9752 61184 -4710 1 OUT
 port 7 nsew
 rlabel metal2 28544 1668 58134 4684 1 VDD
 port 5 nsew
-rlabel metal2 31210 -31714 60790 -28128 1 GROUND
+rlabel metal2 31210 -31714 60790 -28128 1 VSS
 port 6 nsew
 << end >>
