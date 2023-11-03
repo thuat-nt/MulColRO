@@ -868,7 +868,7 @@ rect 16844 2384 16866 2568
 rect 16084 2380 16866 2384
 rect 15046 2308 15328 2310
 rect 16084 2292 16858 2380
-use sky130_fd_pr__cap_mim_m3_1_ZYFHHD  XC1 ~/ColRO/mag
+use sky130_fd_pr__cap_mim_m3_1_ZYFHHD  XC1
 timestamp 1695378092
 transform 0 -1 17434 1 0 3284
 box -386 -440 386 440
@@ -876,11 +876,11 @@ use sky130_fd_pr__cap_mim_m3_1_ZYFHHD  XC2
 timestamp 1695378092
 transform 0 -1 15894 1 0 2646
 box -386 -440 386 440
-use sky130_fd_pr__nfet_01v8_lvt_7233E2  XM2 ~/ColRO/mag
+use sky130_fd_pr__nfet_01v8_lvt_7233E2  XM2
 timestamp 1695441144
 transform 1 0 9478 0 1 4274
 box -496 -1010 496 1010
-use sky130_fd_pr__pfet_01v8_lvt_CEAZV5  XM3 ~/ColRO/mag
+use sky130_fd_pr__pfet_01v8_lvt_CEAZV5  XM3
 timestamp 1695440875
 transform 1 0 11817 0 1 7855
 box -825 -719 825 719
@@ -892,11 +892,11 @@ use sky130_fd_pr__nfet_01v8_lvt_7233E2  XM5
 timestamp 1695441144
 transform 1 0 10646 0 1 4282
 box -496 -1010 496 1010
-use sky130_fd_pr__pfet_01v8_lvt_LEXMNV  XM10 ~/ColRO/mag
+use sky130_fd_pr__pfet_01v8_lvt_LEXMNV  XM10
 timestamp 1695441144
 transform 1 0 16994 0 1 6355
 box -1812 -2219 1812 2219
-use sky130_fd_pr__pfet_01v8_lvt_CEE7V5  XM14 ~/ColRO/mag
+use sky130_fd_pr__pfet_01v8_lvt_CEE7V5  XM14
 timestamp 1696133064
 transform 1 0 7612 0 1 6143
 box -1154 -719 1154 719
@@ -904,11 +904,11 @@ use sky130_fd_pr__pfet_01v8_lvt_CEE7V5  XM15
 timestamp 1696133064
 transform 1 0 10190 0 1 6149
 box -1154 -719 1154 719
-use sky130_fd_pr__nfet_01v8_lvt_HZEGLD  XM17 ~/ColRO/mag
+use sky130_fd_pr__nfet_01v8_lvt_HZEGLD  XM17
 timestamp 1695441144
 transform 1 0 13122 0 1 3486
 box -1812 -1810 1812 1810
-use sky130_fd_pr__nfet_01v8_lvt_RFVHWA  XM19 ~/ColRO/mag
+use sky130_fd_pr__nfet_01v8_lvt_RFVHWA  XM19
 timestamp 1695441144
 transform 1 0 6978 0 1 4566
 box -496 -710 496 710
@@ -916,7 +916,7 @@ use sky130_fd_pr__nfet_01v8_lvt_RFVHWA  XM20
 timestamp 1695441144
 transform 1 0 8168 0 1 4566
 box -496 -710 496 710
-use sky130_fd_pr__pfet_01v8_lvt_8WRJS5  XM26 ~/ColRO/mag
+use sky130_fd_pr__pfet_01v8_lvt_8WRJS5  XM26
 timestamp 1695378092
 transform 1 0 8963 0 1 8101
 box -1483 -469 1483 469

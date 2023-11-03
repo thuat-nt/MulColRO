@@ -147,7 +147,7 @@ rect 9150 6054 9850 6200
 rect 9150 5826 9242 6054
 rect 9736 5826 9850 6054
 rect 9150 5800 9850 5826
-use sky130_fd_pr__nfet_01v8_lvt_T4BG7Y  sky130_fd_pr__nfet_01v8_lvt_T4BG7Y_0 ~/ColRO/mag
+use sky130_fd_pr__nfet_01v8_lvt_T4BG7Y  XM2
 timestamp 1695195131
 transform 0 1 8634 -1 0 7500
 box -396 -5210 396 5210
@@ -155,7 +155,7 @@ use sky130_fd_pr__nfet_01v8_lvt_T4BG7Y  XM1
 timestamp 1695195131
 transform 0 1 6124 -1 0 6460
 box -396 -5210 396 5210
-use sky130_fd_pr__pfet_01v8_lvt_B5Z988  XM10 ~/ColRO/mag
+use sky130_fd_pr__pfet_01v8_lvt_B5Z988  XM10 
 timestamp 1695195131
 transform 1 0 2134 0 1 8267
 box -1196 -1219 1196 1219

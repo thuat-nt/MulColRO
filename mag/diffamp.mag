@@ -1665,15 +1665,15 @@ rect 54468 -24932 55282 -13714
 rect 54468 -25766 54610 -24932
 rect 55178 -25766 55282 -24932
 rect 54468 -25986 55282 -25766
-use sky130_fd_pr__pfet_01v8_lvt_79GNHJ  XM1 ~/ColRO/mag
+use sky130_fd_pr__pfet_01v8_lvt_79GNHJ  XM1
 timestamp 1696133064
 transform 1 0 36754 0 1 -16697
 box -4754 -3219 4754 3219
-use sky130_fd_pr__pfet_01v8_lvt_RM6ABE  XM2 ~/ColRO/mag
+use sky130_fd_pr__pfet_01v8_lvt_RM6ABE  XM2
 timestamp 1696133064
 transform 0 1 47313 -1 0 -11970
 box -1154 -3219 1154 3219
-use sky130_fd_pr__nfet_01v8_lvt_9U978C  XM3 ~/ColRO/mag
+use sky130_fd_pr__nfet_01v8_lvt_9U978C  XM3
 timestamp 1696157534
 transform 0 1 55568 1 0 -13321
 box -3225 -1210 3225 1210
@@ -1681,7 +1681,7 @@ use sky130_fd_pr__pfet_01v8_lvt_RM6ABE  XM4
 timestamp 1696133064
 transform 0 -1 47295 -1 0 -14588
 box -1154 -3219 1154 3219
-use sky130_fd_pr__nfet_01v8_lvt_RM3WAQ  XM5 ~/ColRO/mag
+use sky130_fd_pr__nfet_01v8_lvt_RM3WAQ  XM5
 timestamp 1696157534
 transform 1 0 44662 0 1 -2590
 box -13432 -2496 13432 2496
