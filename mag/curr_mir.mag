@@ -164,7 +164,7 @@ flabel metal1 644 8176 844 8376 0 FreeSans 256 0 0 0 Vtune
 port 0 nsew
 rlabel locali 2212 9386 11320 10390 1 VDD
 port 3 nsew
-rlabel locali 990 5142 11238 6164 1 GROUND
+rlabel locali 990 5142 11238 6164 1 VSS
 port 2 nsew
 rlabel metal2 4610 7784 5320 8564 1 Ib
 port 4 nsew
