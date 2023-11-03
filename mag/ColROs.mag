@@ -438,7 +438,7 @@ timestamp 1698059410
 transform 0 -1 63946 -1 0 6377
 box 2815 1163 9644 5591
 << labels >>
-rlabel metal5 17282 -9148 65047 -5619 1 GROUND
+rlabel metal5 17282 -9148 65047 -5619 1 VSS
 port 2 nsew
 rlabel metal5 17869 22808 65634 26337 1 VDD
 port 1 nsew
