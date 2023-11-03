@@ -929,7 +929,7 @@ flabel metal1 11534 6114 11734 6314 0 FreeSans 256 0 0 0 inp
 port 1 nsew
 flabel metal1 16658 2376 16858 2576 0 FreeSans 256 0 0 0 out
 port 3 nsew
-rlabel locali 6276 1244 15318 1756 1 GROUND
+rlabel locali 6276 1244 15318 1756 1 VSS
 port 5 nsew
 rlabel locali 7334 8482 18966 9014 1 VDD
 port 4 nsew

@@ -436,7 +436,7 @@ rlabel metal3 8422 860 8705 1115 1 Vtune
 port 15 nsew
 rlabel metal4 8164 7618 9090 8508 1 intin
 port 16 nsew
-rlabel metal2 7473 -5062 28559 -3197 1 GROUND
+rlabel metal2 7473 -5062 28559 -3197 1 VSS
 port 18 nsew
 rlabel metal2 7314 16078 28629 18146 1 VDD
 port 17 nsew

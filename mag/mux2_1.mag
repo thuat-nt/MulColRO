@@ -144,7 +144,7 @@ flabel metal1 10261 10406 10361 10506 0 FreeSans 128 0 0 0 OUT
 port 2 nsew
 rlabel metal2 2120 15037 10436 16746 1 VDD
 port 5 nsew
-rlabel metal2 2100 4211 10423 5924 1 GROUND
+rlabel metal2 2100 4211 10423 5924 1 VSS
 port 6 nsew
 flabel metal1 3208 12930 3308 13030 0 FreeSans 128 0 0 0 IN0
 port 3 nsew
