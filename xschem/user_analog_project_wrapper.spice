@@ -95,22 +95,22 @@ R4 vssd1 io_clamp_low[1] sky130_fd_pr__res_generic_m3 W=11 L=0.25 m=1
 R5 vssd1 io_clamp_high[1] sky130_fd_pr__res_generic_m3 W=11 L=0.25 m=1
 R6 vssd1 io_clamp_low[0] sky130_fd_pr__res_generic_m3 W=11 L=0.25 m=1
 R7 vssd1 io_clamp_high[0] sky130_fd_pr__res_generic_m3 W=11 L=0.25 m=1
-XR[15] io_oeb[15] vccd1 R_0_125
-XR[14] io_oeb[14] vccd1 R_0_125
-XR[13] io_oeb[13] vccd1 R_0_125
-XR[12] io_oeb[12] vccd1 R_0_125
-XR[11] io_oeb[11] vccd1 R_0_125
-XR[10] io_oeb[10] vccd1 R_0_125
-XR[9] io_oeb[9] vccd1 R_0_125
-XR[8] io_oeb[8] vccd1 R_0_125
-XR[7] io_oeb[7] vccd1 R_0_125
-XR[6] io_oeb[6] vccd1 R_0_125
-XR[5] io_oeb[5] vccd1 R_0_125
-XR[4] io_oeb[4] vccd1 R_0_125
-XR[3] io_oeb[3] vccd1 R_0_125
-XR[2] io_oeb[2] vccd1 R_0_125
-XR[1] io_oeb[1] vccd1 R_0_125
-XR[0] io_oeb[0] vccd1 R_0_125
+XR[15] vccd1 io_oeb[15] R_0_125
+XR[14] vccd1 io_oeb[14] R_0_125
+XR[13] vccd1 io_oeb[13] R_0_125
+XR[12] vccd1 io_oeb[12] R_0_125
+XR[11] vccd1 io_oeb[11] R_0_125
+XR[10] vccd1 io_oeb[10] R_0_125
+XR[9] vccd1 io_oeb[9] R_0_125
+XR[8] vccd1 io_oeb[8] R_0_125
+XR[7] vccd1 io_oeb[7] R_0_125
+XR[6] vccd1 io_oeb[6] R_0_125
+XR[5] vccd1 io_oeb[5] R_0_125
+XR[4] vccd1 io_oeb[4] R_0_125
+XR[3] vccd1 io_oeb[3] R_0_125
+XR[2] vccd1 io_oeb[2] R_0_125
+XR[1] vccd1 io_oeb[1] R_0_125
+XR[0] vccd1 io_oeb[0] R_0_125
 x1 vccd1 vssd1 gpio_analog[0] gpio_analog[4] gpio_analog[3] gpio_analog[2] gpio_analog[1]
 + gpio_analog[5] gpio_analog[6] gpio_analog[7] gpio_analog[8] io_analog[3] io_analog[2] io_analog[1] io_analog[0]
 + io_in[6] io_in[5] io_in[4] io_in[3] io_in[2] io_in[1] io_in[0] MulColROs
@@ -128,17 +128,17 @@ R1 in out sky130_fd_pr__res_generic_m1 W=10 L=10 m=1
 * expanding   symbol:  MulColROs.sym # of pins=16
 ** sym_path: /run/media/thuat/build/cmos/MulColRO/xschem/MulColROs.sym
 ** sch_path: /run/media/thuat/build/cmos/MulColRO/xschem/MulColROs.sch
-.subckt MulColROs VDD GROUND AIn0 AIn[3] AIn[2] AIn[1] AIn[0] AIn2 AIn3 AIn4 AIn5 AOut[3] AOut[2]
+.subckt MulColROs VDD VSS AIn0 AIn[3] AIn[2] AIn[1] AIn[0] AIn2 AIn3 AIn4 AIn5 AOut[3] AOut[2]
 + AOut[1] AOut[0] REG0 REG1 REG2 REG3 REG4 REG5 REG6
 *.PININFO REG1:I REG2:I REG3:I REG0:I REG5:I REG6:I REG4:I AIn0:I AIn[3:0]:I AIn2:I AIn3:I AIn4:I
-*+ AIn5:I GROUND:B VDD:B AOut[3:0]:O
-xMulColROs[3] VDD GROUND AIn0 AOut[3] AIn[3] AIn2 AIn3 AIn4 AIn5 REG0 REG1 REG2 REG3 REG4 REG5 REG6
+*+ AIn5:I VSS:B VDD:B AOut[3:0]:O
+xMulColROs[3] VDD VSS AIn0 AOut[3] AIn[3] AIn2 AIn3 AIn4 AIn5 REG0 REG1 REG2 REG3 REG4 REG5 REG6
 + ColROs
-xMulColROs[2] VDD GROUND AIn0 AOut[2] AIn[2] AIn2 AIn3 AIn4 AIn5 REG0 REG1 REG2 REG3 REG4 REG5 REG6
+xMulColROs[2] VDD VSS AIn0 AOut[2] AIn[2] AIn2 AIn3 AIn4 AIn5 REG0 REG1 REG2 REG3 REG4 REG5 REG6
 + ColROs
-xMulColROs[1] VDD GROUND AIn0 AOut[1] AIn[1] AIn2 AIn3 AIn4 AIn5 REG0 REG1 REG2 REG3 REG4 REG5 REG6
+xMulColROs[1] VDD VSS AIn0 AOut[1] AIn[1] AIn2 AIn3 AIn4 AIn5 REG0 REG1 REG2 REG3 REG4 REG5 REG6
 + ColROs
-xMulColROs[0] VDD GROUND AIn0 AOut[0] AIn[0] AIn2 AIn3 AIn4 AIn5 REG0 REG1 REG2 REG3 REG4 REG5 REG6
+xMulColROs[0] VDD VSS AIn0 AOut[0] AIn[0] AIn2 AIn3 AIn4 AIn5 REG0 REG1 REG2 REG3 REG4 REG5 REG6
 + ColROs
 .ends
 
@@ -146,13 +146,13 @@ xMulColROs[0] VDD GROUND AIn0 AOut[0] AIn[0] AIn2 AIn3 AIn4 AIn5 REG0 REG1 REG2 
 * expanding   symbol:  ColROs.sym # of pins=16
 ** sym_path: /run/media/thuat/build/cmos/MulColRO/xschem/ColROs.sym
 ** sch_path: /run/media/thuat/build/cmos/MulColRO/xschem/ColROs.sch
-.subckt ColROs VDD GROUND AIn0 AOut AIn1 AIn2 AIn3 AIn4 AIn5 REG0 REG1 REG2 REG3 REG4 REG5 REG6
+.subckt ColROs VDD VSS AIn0 AOut AIn1 AIn2 AIn3 AIn4 AIn5 REG0 REG1 REG2 REG3 REG4 REG5 REG6
 *.PININFO AOut:O REG1:I REG2:I REG3:I REG0:I REG5:I REG6:I REG4:I AIn0:I AIn1:I AIn2:I AIn3:I AIn4:I
-*+ AIn5:I GROUND:I VDD:I
-x1 AIn3 net1 AIn0 AIn1 AIn2 VDD GROUND diffamp
-x2 REG3 REG2 net1 net2 AIn4 REG0 AIn5 REG1 REG5 REG4 VDD GROUND integrator
-x7 AIn4 net3 AOut GROUND VDD buffer
-x3 REG6 net2 net3 net1 VDD GROUND mux2_1
+*+ AIn5:I VSS:I VDD:I
+x1 AIn3 net1 AIn0 AIn1 AIn2 VDD VSS diffamp
+x2 REG3 REG2 net1 net2 AIn4 REG0 AIn5 REG1 REG5 REG4 VDD VSS integrator
+x7 AIn4 net3 AOut VSS VDD buffer
+x3 REG6 net2 net3 net1 VDD VSS mux2_1
 .ends
 
 
@@ -176,8 +176,8 @@ XM6 net1 REF net4 VSS sky130_fd_pr__nfet_01v8_lvt L=3.5 W=800 nf=35 m=1
 ** sch_path: /run/media/thuat/build/cmos/MulColRO/xschem/Integrator/integrator.sch
 .subckt integrator sw2 sw1 intin intout opbias en Vtune rst sw4 sw3 VDD VSS
 *.PININFO intin:I Vtune:I intout:O opbias:I sw1:I sw2:I rst:I en:I sw3:I sw4:I VDD:B VSS:B
-XC1 net3 intout sky130_fd_pr__cap_mim_m3_1 W=30 L=30 m=1
-XC2 net2 intout sky130_fd_pr__cap_mim_m3_1 W=30 L=30 m=1
+XC1 net3 intout sky130_fd_pr__cap_mim_m3_1 W=30 L=30 MF=1 m=1
+XC2 net2 intout sky130_fd_pr__cap_mim_m3_1 W=30 L=30 MF=1 m=1
 x9 sw2 net2 net1 VDD VSS switch
 x1 sw1 net3 net1 VDD VSS switch
 x3 Vtune intin VDD VSS curr_mir
@@ -186,9 +186,9 @@ x5 rst intout net1 VDD VSS switch
 x6 en VSS intin VDD VSS switch
 x7 VDD en net4 VSS not
 x2 net4 net1 intin VDD VSS switch
-XC3 net5 intout sky130_fd_pr__cap_mim_m3_1 W=30 L=30 m=1
+XC3 net5 intout sky130_fd_pr__cap_mim_m3_1 W=30 L=30 MF=1 m=1
 x10 sw3 net5 net1 VDD VSS switch
-XC4 net6 intout sky130_fd_pr__cap_mim_m3_1 W=30 L=30 m=1
+XC4 net6 intout sky130_fd_pr__cap_mim_m3_1 W=30 L=30 MF=1 m=1
 x8 sw4 net6 net1 VDD VSS switch
 .ends
 
@@ -240,8 +240,8 @@ XM10 net1 Vtune VDD VDD sky130_fd_pr__pfet_01v8_lvt L=10 W=10 nf=1 m=1
 ** sch_path: /run/media/thuat/build/cmos/MulColRO/xschem/opamp/opamp.sch
 .subckt opamp opbias inp inn out VSS VDD
 *.PININFO inp:I inn:I opbias:I out:O VDD:B VSS:B
-XC1 net5 out sky130_fd_pr__cap_mim_m3_1 W=2 L=4 m=1
-XC2 out net4 sky130_fd_pr__cap_mim_m3_1 W=2 L=4 m=1
+XC1 net5 out sky130_fd_pr__cap_mim_m3_1 W=4 L=2 MF=1 m=1
+XC2 out net4 sky130_fd_pr__cap_mim_m3_1 W=4 L=2 MF=1 m=1
 XM26 net2 opbias VDD VDD sky130_fd_pr__pfet_01v8_lvt L=3 W=10 nf=4 m=1
 XM3 net1 net1 VDD VDD sky130_fd_pr__pfet_01v8_lvt L=3 W=10 nf=2 m=1
 XM4 net5 net1 VDD VDD sky130_fd_pr__pfet_01v8_lvt L=3 W=10 nf=2 m=1

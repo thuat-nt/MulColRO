@@ -167,8 +167,8 @@ C {devices/ipin.sym} 1510 -580 2 0 {name=p6 lab=inp}
 C {devices/ipin.sym} 1180 -580 0 0 {name=p7 lab=inn}
 C {devices/ipin.sym} 1280 -770 0 0 {name=p8 lab=opbias}
 C {devices/opin.sym} 1900 -510 0 0 {name=p5 lab=out}
-C {sky130_fd_pr/cap_mim_m3_1.sym} 1800 -570 3 0 {name=C1 model=cap_mim_m3_1 W=2 L=4 MF=1 spiceprefix=X}
-C {sky130_fd_pr/cap_mim_m3_1.sym} 1800 -450 1 1 {name=C2 model=cap_mim_m3_1 W=2 L=4 MF=1 spiceprefix=X}
+C {sky130_fd_pr/cap_mim_m3_1.sym} 1800 -570 3 0 {name=C1 model=cap_mim_m3_1 W=4 L=2 MF=1 spiceprefix=X}
+C {sky130_fd_pr/cap_mim_m3_1.sym} 1800 -450 1 1 {name=C2 model=cap_mim_m3_1 W=4 L=2 MF=1 spiceprefix=X}
 C {sky130_fd_pr/pfet_01v8_lvt.sym} 1320 -770 0 0 {name=M26
 L=3
 W=10

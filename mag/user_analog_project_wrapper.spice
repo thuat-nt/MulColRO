@@ -78,11 +78,11 @@ X33 a_n4198_n2286# a_n4898_n2374# a_n4956_n2286# a_n13396_n2460# sky130_fd_pr__n
 X34 a_5656_n2286# a_4956_n2374# a_4898_n2286# a_n13396_n2460# sky130_fd_pr__nfet_01v8_lvt ad=3.31 pd=23.1 as=3.31 ps=23.1 w=22.9 l=3.5
 .ends
 
-.subckt diffamp PCAS REF PIX GM_BIAS VDD VSUBS OUT
+.subckt diffamp PCAS REF PIX GM_BIAS VDD VSS OUT
 XXM1 m1_35096_n15744# m1_32048_n23188# VDD m1_32048_n23188# VDD VDD m1_32048_n23188#
 + m1_35096_n15744# sky130_fd_pr__pfet_01v8_lvt_79GNHJ
 XXM2 OUT VDD PCAS m1_32020_n12120# m1_32020_n12120# OUT PCAS PCAS sky130_fd_pr__pfet_01v8_lvt_RM6ABE
-XXM3 m1_31296_n26048# m1_31296_n26048# GM_BIAS VSUBS GM_BIAS VSUBS sky130_fd_pr__nfet_01v8_lvt_9U978C
+XXM3 m1_31296_n26048# m1_31296_n26048# GM_BIAS VSS GM_BIAS VSS sky130_fd_pr__nfet_01v8_lvt_9U978C
 XXM4 m1_32048_n23188# VDD PCAS m1_35096_n15744# m1_35096_n15744# m1_32048_n23188#
 + PCAS PCAS sky130_fd_pr__pfet_01v8_lvt_RM6ABE
 XXM5 PIX PIX PIX PIX PIX m1_31296_n26048# PIX PIX PIX PIX m1_31296_n26048# OUT PIX
@@ -90,8 +90,8 @@ XXM5 PIX PIX PIX PIX PIX m1_31296_n26048# PIX PIX PIX PIX m1_31296_n26048# OUT P
 + PIX PIX PIX OUT m1_31296_n26048# PIX PIX OUT OUT m1_31296_n26048# PIX OUT PIX m1_31296_n26048#
 + m1_31296_n26048# m1_31296_n26048# PIX OUT OUT OUT m1_31296_n26048# m1_31296_n26048#
 + OUT m1_31296_n26048# OUT m1_31296_n26048# m1_31296_n26048# OUT PIX OUT m1_31296_n26048#
-+ PIX PIX VSUBS OUT m1_31296_n26048# OUT OUT OUT m1_31296_n26048# PIX PIX OUT PIX
-+ PIX sky130_fd_pr__nfet_01v8_lvt_RM3WAQ
++ PIX PIX VSS OUT m1_31296_n26048# OUT OUT OUT m1_31296_n26048# PIX PIX OUT PIX PIX
++ sky130_fd_pr__nfet_01v8_lvt_RM3WAQ
 XXM6 REF REF REF REF REF m1_32048_n23188# REF REF REF REF m1_32048_n23188# m1_31296_n26048#
 + REF m1_32048_n23188# REF REF REF REF REF REF REF REF REF m1_32048_n23188# REF m1_31296_n26048#
 + m1_32048_n23188# REF REF REF m1_31296_n26048# m1_32048_n23188# REF REF m1_31296_n26048#
@@ -99,7 +99,7 @@ XXM6 REF REF REF REF REF m1_32048_n23188# REF REF REF REF m1_32048_n23188# m1_31
 + m1_32048_n23188# REF m1_31296_n26048# m1_31296_n26048# m1_31296_n26048# m1_32048_n23188#
 + m1_32048_n23188# m1_31296_n26048# m1_32048_n23188# m1_31296_n26048# m1_32048_n23188#
 + m1_32048_n23188# m1_31296_n26048# REF m1_31296_n26048# m1_32048_n23188# REF REF
-+ VSUBS m1_31296_n26048# m1_32048_n23188# m1_31296_n26048# m1_31296_n26048# m1_31296_n26048#
++ VSS m1_31296_n26048# m1_32048_n23188# m1_31296_n26048# m1_31296_n26048# m1_31296_n26048#
 + m1_32048_n23188# REF REF m1_31296_n26048# REF REF sky130_fd_pr__nfet_01v8_lvt_RM3WAQ
 XXM8 VDD m1_32048_n23188# m1_32020_n12120# m1_32048_n23188# m1_32020_n12120# VDD m1_32048_n23188#
 + VDD sky130_fd_pr__pfet_01v8_lvt_79GNHJ
@@ -113,8 +113,8 @@ X0 a_35_n100# a_n35_n188# a_n93_n100# a_n195_n274# sky130_fd_pr__nfet_01v8_lvt a
 X0 a_35_n200# a_n35_n297# a_n93_n200# w_n231_n419# sky130_fd_pr__pfet_01v8_lvt ad=0.58 pd=4.58 as=0.58 ps=4.58 w=2 l=0.35
 .ends
 
-.subckt not out in VDD VSUBS
-XXM1 out in VSUBS VSUBS sky130_fd_pr__nfet_01v8_lvt_6LX62X
+.subckt not out in VDD VSS
+XXM1 out in VSS VSS sky130_fd_pr__nfet_01v8_lvt_6LX62X
 XXM10 VDD in out VDD sky130_fd_pr__pfet_01v8_lvt_4QFWD3
 .ends
 
@@ -137,10 +137,10 @@ X3 a_300_n4000# G a_n358_n4000# B sky130_fd_pr__nfet_01v8_lvt ad=5.8 pd=40.3 as=
 X4 a_958_n4000# a_358_n4088# a_300_n4000# B sky130_fd_pr__nfet_01v8_lvt ad=5.8 pd=40.3 as=5.8 ps=40.3 w=40 l=3
 .ends
 
-.subckt switch in VSUBS out toggle VDD
-Xx1 x1/out toggle VDD VSUBS not
+.subckt switch in out toggle VSS VDD
+Xx1 x1/out toggle VDD VSS not
 XXM26 in x1/out in in out x1/out x1/out out out out x1/out x1/out sky130_fd_pr__pfet_01v8_lvt_ER7S26
-XXM1 out toggle toggle in VSUBS toggle out toggle out toggle in in sky130_fd_pr__nfet_01v8_lvt_4833E6
+XXM1 out toggle toggle in VSS toggle out toggle out toggle in in sky130_fd_pr__nfet_01v8_lvt_4833E6
 .ends
 
 .subckt sky130_fd_pr__nfet_01v8_lvt_T4BG7Y a_200_n5000# a_n360_n5174# a_n200_n5088#
@@ -153,9 +153,9 @@ X0 a_200_n5000# a_n200_n5088# a_n258_n5000# a_n360_n5174# sky130_fd_pr__nfet_01v
 X0 a_1000_n1000# a_n1000_n1097# a_n1058_n1000# w_n1196_n1219# sky130_fd_pr__pfet_01v8_lvt ad=2.9 pd=20.6 as=2.9 ps=20.6 w=10 l=10
 .ends
 
-.subckt curr_mir Vtune VDD Ib VSUBS
-Xsky130_fd_pr__nfet_01v8_lvt_T4BG7Y_0 VSUBS VSUBS m1_1036_6332# Ib sky130_fd_pr__nfet_01v8_lvt_T4BG7Y
-XXM1 VSUBS VSUBS m1_1036_6332# m1_1036_6332# sky130_fd_pr__nfet_01v8_lvt_T4BG7Y
+.subckt curr_mir Vtune VDD Ib VSS
+XXM1 VSS VSS m1_1036_6332# m1_1036_6332# sky130_fd_pr__nfet_01v8_lvt_T4BG7Y
+XXM2 VSS VSS m1_1036_6332# Ib sky130_fd_pr__nfet_01v8_lvt_T4BG7Y
 XXM10 Vtune VDD VDD m1_1036_6332# sky130_fd_pr__pfet_01v8_lvt_B5Z988
 .ends
 
@@ -196,8 +196,8 @@ X0 a_629_n500# a_29_n597# S B sky130_fd_pr__pfet_01v8_lvt ad=1.45 pd=10.6 as=0.7
 X1 S G D B sky130_fd_pr__pfet_01v8_lvt ad=0.725 pd=5.29 as=1.45 ps=10.6 w=5 l=3
 .ends
 
-.subckt sky130_fd_pr__cap_mim_m3_1_ZYFHHD m3_n386_n440# c1_n346_n400#
-X0 c1_n346_n400# m3_n386_n440# sky130_fd_pr__cap_mim_m3_1 l=4 w=2
+.subckt sky130_fd_pr__cap_mim_m3_1_ZYFHHD c0 c1
+X0 c0 c1 sky130_fd_pr__cap_mim_m3_1 l=4 w=2
 .ends
 
 .subckt sky130_fd_pr__pfet_01v8_lvt_LEXMNV G D a_n958_n2097# w_n1812_n2219# a_n358_n2000#
@@ -209,71 +209,71 @@ X3 a_300_n2000# a_n300_n2097# a_n358_n2000# w_n1812_n2219# sky130_fd_pr__pfet_01
 X4 a_958_n2000# a_358_n2097# a_300_n2000# w_n1812_n2219# sky130_fd_pr__pfet_01v8_lvt ad=2.9 pd=20.3 as=2.9 ps=20.3 w=20 l=3
 .ends
 
-.subckt opamp opbias inp inn VDD out VSUBS
+.subckt opamp opbias inp inn VDD out VSS
 XXM14 inn XM5/G VDD inn inn XM26/D XM26/D XM5/G sky130_fd_pr__pfet_01v8_lvt_CEE7V5
-XXM26 opbias opbias XM26/D VDD VDD opbias opbias XM26/D XM26/D VDD sky130_fd_pr__pfet_01v8_lvt_8WRJS5
 XXM15 inp XM2/G VDD inp inp XM26/D XM26/D XM2/G sky130_fd_pr__pfet_01v8_lvt_CEE7V5
-XXM17 out XM2/G XM2/G out VSUBS XM2/G VSUBS VSUBS XM2/G VSUBS XM2/G out sky130_fd_pr__nfet_01v8_lvt_HZEGLD
-XXM19 XM5/G XM5/G VSUBS VSUBS sky130_fd_pr__nfet_01v8_lvt_RFVHWA
-XXM2 XM2/G XM4/G VSUBS VSUBS sky130_fd_pr__nfet_01v8_lvt_7233E2
+XXM26 opbias opbias XM26/D VDD VDD opbias opbias XM26/D XM26/D VDD sky130_fd_pr__pfet_01v8_lvt_8WRJS5
+XXM17 out XM2/G XM2/G out VSS XM2/G VSS VSS XM2/G VSS XM2/G out sky130_fd_pr__nfet_01v8_lvt_HZEGLD
+XXM19 XM5/G XM5/G VSS VSS sky130_fd_pr__nfet_01v8_lvt_RFVHWA
+XXM2 XM2/G XM4/G VSS VSS sky130_fd_pr__nfet_01v8_lvt_7233E2
 XXM3 XM4/G XM4/G XM4/G VDD XM4/G VDD sky130_fd_pr__pfet_01v8_lvt_CEAZV5
 XXM4 XM4/G XM4/G XM5/D VDD XM5/D VDD sky130_fd_pr__pfet_01v8_lvt_CEAZV5
-XXM5 XM5/G XM5/D VSUBS VSUBS sky130_fd_pr__nfet_01v8_lvt_7233E2
-XXC1 out XM5/D sky130_fd_pr__cap_mim_m3_1_ZYFHHD
-XXC2 XM2/G out sky130_fd_pr__cap_mim_m3_1_ZYFHHD
-XXM20 XM5/G XM2/G VSUBS VSUBS sky130_fd_pr__nfet_01v8_lvt_RFVHWA
+XXM5 XM5/G XM5/D VSS VSS sky130_fd_pr__nfet_01v8_lvt_7233E2
+XXC1 XM5/D out sky130_fd_pr__cap_mim_m3_1_ZYFHHD
+XXC2 out XM2/G sky130_fd_pr__cap_mim_m3_1_ZYFHHD
+XXM20 XM5/G XM2/G VSS VSS sky130_fd_pr__nfet_01v8_lvt_RFVHWA
 XXM10 XM5/D out XM5/D VDD out out XM5/D VDD XM5/D VDD VDD XM5/D sky130_fd_pr__pfet_01v8_lvt_LEXMNV
 .ends
 
-.subckt sky130_fd_pr__cap_mim_m3_1_3HBNLG m3_n3186_n3040# c1_n3146_n3000#
-X0 c1_n3146_n3000# m3_n3186_n3040# sky130_fd_pr__cap_mim_m3_1 l=30 w=30
+.subckt sky130_fd_pr__cap_mim_m3_1_3HBNLG c0 c1
+X0 c0 c1 sky130_fd_pr__cap_mim_m3_1 l=30 w=30
 .ends
 
-.subckt integrator intout sw4 sw3 rst sw2 sw1 opbias en Vtune intin VDD VSUBS
-Xx1 x9/in VSUBS x1/out sw1 VDD switch
-Xx2 intin VSUBS x9/in x7/out VDD switch
-Xx3 Vtune VDD intin VSUBS curr_mir
-Xx4 opbias VSUBS x9/in VDD intout VSUBS opamp
-Xx5 x9/in VSUBS intout rst VDD switch
-Xx6 intin VSUBS VSUBS en VDD switch
-Xx7 x7/out en VDD VSUBS not
-Xx8 x9/in VSUBS x8/out sw4 VDD switch
-Xx9 x9/in VSUBS x9/out sw2 VDD switch
-XXC1 intout x1/out sky130_fd_pr__cap_mim_m3_1_3HBNLG
-XXC2 intout x9/out sky130_fd_pr__cap_mim_m3_1_3HBNLG
-Xx10 x9/in VSUBS x10/out sw3 VDD switch
-XXC3 intout x10/out sky130_fd_pr__cap_mim_m3_1_3HBNLG
-XXC4 intout x8/out sky130_fd_pr__cap_mim_m3_1_3HBNLG
+.subckt integrator sw4 sw3 rst sw2 sw1 opbias en Vtune intin VDD intout VSS
+Xx1 x9/in x1/out sw1 VSS VDD switch
+Xx3 Vtune VDD intin VSS curr_mir
+Xx2 intin x9/in x7/out VSS VDD switch
+Xx4 opbias VSS x9/in VDD intout VSS opamp
+Xx5 x9/in intout rst VSS VDD switch
+Xx6 intin VSS en VSS VDD switch
+Xx7 x7/out en VDD VSS not
+Xx8 x9/in x8/out sw4 VSS VDD switch
+Xx9 x9/in x9/out sw2 VSS VDD switch
+XXC1 x1/out intout sky130_fd_pr__cap_mim_m3_1_3HBNLG
+XXC2 x9/out intout sky130_fd_pr__cap_mim_m3_1_3HBNLG
+XXC3 XC3/c0 intout sky130_fd_pr__cap_mim_m3_1_3HBNLG
+Xx10 x9/in XC3/c0 sw3 VSS VDD switch
+XXC4 x8/out intout sky130_fd_pr__cap_mim_m3_1_3HBNLG
 .ends
 
-.subckt mux2_1 SEL0 IN1 IN0 VDD OUT VSUBS
-Xx1 x1/out SEL0 VDD VSUBS not
-Xx5 IN0 VSUBS OUT x1/out VDD switch
-Xx6 IN1 VSUBS OUT SEL0 VDD switch
+.subckt mux2_1 SEL0 IN1 IN0 VDD OUT VSS
+Xx1 x1/out SEL0 VDD VSS not
+Xx5 IN0 OUT x1/out VSS VDD switch
+Xx6 IN1 OUT SEL0 VSS VDD switch
 .ends
 
-.subckt buffer opbias in out VDD VSUBS
-Xx1 opbias in out VDD out VSUBS opamp
+.subckt buffer opbias in out VDD VSS
+Xx1 opbias in out VDD out VSS opamp
 .ends
 
 .subckt ColROs VDD AIn0 AIn1 AIn2 AIn3 AIn4 AIn5 REG0 REG1 REG2 REG3 REG4 REG5 REG6
-+ AOut VSUBS
-Xx1 AIn3 AIn0 AIn1 AIn2 VDD VSUBS x3/IN0 diffamp
-Xx2 x3/IN1 REG5 REG4 REG1 REG3 REG2 AIn4 REG0 AIn5 x3/IN0 VDD VSUBS integrator
-Xx3 REG6 x3/IN1 x3/IN0 VDD x7/in VSUBS mux2_1
-Xx7 AIn4 x7/in AOut VDD VSUBS buffer
++ AOut VSS
+Xx1 AIn3 AIn0 AIn1 AIn2 VDD VSS x3/IN0 diffamp
+Xx2 REG5 REG4 REG1 REG3 REG2 AIn4 REG0 AIn5 x3/IN0 VDD x3/IN1 VSS integrator
+Xx3 REG6 x3/IN1 x3/IN0 VDD x7/in VSS mux2_1
+Xx7 AIn4 x7/in AOut VDD VSS buffer
 .ends
 
 .subckt MulColROs VDD AOut[3] AOut[2] AOut[1] AOut[0] REG6 REG5 REG4 REG3 REG2 REG1
-+ REG0 AIn5 AIn4 AIn3 AIn2 AIn0 AIn[3] AIn[2] AIn[1] AIn[0] VSUBS
++ REG0 AIn5 AIn4 AIn3 AIn2 AIn0 AIn[3] AIn[2] AIn[1] AIn[0] VSS
 XxMulColROs[3] VDD AIn0 AIn[3] AIn2 AIn3 AIn4 AIn5 REG0 REG1 REG2 REG3 REG4 REG5 REG6
-+ AOut[3] VSUBS ColROs
++ AOut[3] VSS ColROs
 XxMulColROs[2] VDD AIn0 AIn[2] AIn2 AIn3 AIn4 AIn5 REG0 REG1 REG2 REG3 REG4 REG5 REG6
-+ AOut[2] VSUBS ColROs
++ AOut[2] VSS ColROs
 XxMulColROs[1] VDD AIn0 AIn[1] AIn2 AIn3 AIn4 AIn5 REG0 REG1 REG2 REG3 REG4 REG5 REG6
-+ AOut[1] VSUBS ColROs
++ AOut[1] VSS ColROs
 XxMulColROs[0] VDD AIn0 AIn[0] AIn2 AIn3 AIn4 AIn5 REG0 REG1 REG2 REG3 REG4 REG5 REG6
-+ AOut[0] VSUBS ColROs
++ AOut[0] VSS ColROs
 .ends
 
 .subckt sky130_fd_pr__res_generic_m3_DPAT6Q m3_n1100_n87# m3_n1100_30#
@@ -387,11 +387,11 @@ R0 m3_n1100_n87# m3_n1100_30# sky130_fd_pr__res_generic_m3 w=11 l=0.3
 + wbs_dat_o[7] wbs_dat_o[8] wbs_dat_o[9] wbs_sel_i[0] wbs_sel_i[1] wbs_sel_i[2] wbs_sel_i[3]
 + wbs_stb_i wbs_we_i
 XXR[15] vccd1 io_oeb[15] R_0_125
-XXR[14] vccd1 io_oeb[14] R_0_125
 Xx1 vccd1 io_analog[3] io_analog[2] io_analog[1] io_analog[0] io_in[0] io_in[1] io_in[2]
 + io_in[3] io_in[4] io_in[5] io_in[6] gpio_analog[8] gpio_analog[7] gpio_analog[6]
 + gpio_analog[5] gpio_analog[0] gpio_analog[4] gpio_analog[3] gpio_analog[2] gpio_analog[1]
 + vssd1 MulColROs
+XXR[14] vccd1 io_oeb[14] R_0_125
 XR1 vssd1 io_clamp_low[2] sky130_fd_pr__res_generic_m3_DPAT6Q
 XXR[13] vccd1 io_oeb[13] R_0_125
 XR2 vssd1 io_clamp_high[2] sky130_fd_pr__res_generic_m3_DPAT6Q
@@ -403,8 +403,8 @@ XR5 vssd1 io_clamp_high[1] sky130_fd_pr__res_generic_m3_DPAT6Q
 XR6 vssd1 io_clamp_low[0] sky130_fd_pr__res_generic_m3_DPAT6Q
 XR7 vssd1 io_clamp_high[0] sky130_fd_pr__res_generic_m3_DPAT6Q
 XXR[9] vccd1 io_oeb[9] R_0_125
-XXR[7] vccd1 io_oeb[7] R_0_125
 XXR[8] vccd1 io_oeb[8] R_0_125
+XXR[7] vccd1 io_oeb[7] R_0_125
 XXR[6] vccd1 io_oeb[6] R_0_125
 XXR[5] vccd1 io_oeb[5] R_0_125
 XXR[4] vccd1 io_oeb[4] R_0_125

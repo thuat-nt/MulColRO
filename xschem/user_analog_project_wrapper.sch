@@ -32,9 +32,9 @@ N 4130 440 4160 440 { lab=io_clamp_low[0]}
 N 4130 530 4160 530 { lab=vssd1}
 N 4130 550 4160 550 { lab=io_clamp_high[0]}
 N 4130 640 4160 640 { lab=vssd1}
-N 3670 710 3670 750 { lab=io_oeb[13:0]}
+N 3670 710 3670 750 { lab=io_oeb[15:0]}
 N 3670 940 3670 960 { lab=vccd1}
-N 3630 710 3670 710 { lab=io_oeb[13:0]}
+N 3630 710 3670 710 { lab=io_oeb[15:0]}
 N 3630 960 3670 960 { lab=vccd1}
 N 3940 -380 3940 -300 {
 lab=vccd1}
@@ -67,9 +67,9 @@ lab=io_in[1]}
 N 3720 -30 3790 -30 {
 lab=io_in[0]}
 N 3670 750 3670 770 {
-lab=io_oeb[13:0]}
+lab=io_oeb[15:0]}
 N 3670 770 3670 790 {
-lab=io_oeb[13:0]}
+lab=io_oeb[15:0]}
 C {devices/iopin.sym} 3240 -470 0 0 {name=p1 lab=vdda1}
 C {devices/iopin.sym} 3240 -440 0 0 {name=p2 lab=vdda2}
 C {devices/iopin.sym} 3240 -410 0 0 {name=p3 lab=vssa1}
@@ -162,5 +162,5 @@ C {devices/lab_pin.sym} 3720 -70 2 1 {name=l8 sig_type=std_logic lab=io_in[2]}
 C {devices/lab_pin.sym} 3720 -50 2 1 {name=l9 sig_type=std_logic lab=io_in[1]}
 C {devices/lab_pin.sym} 3720 -30 2 1 {name=l11 sig_type=std_logic lab=io_in[0]}
 C {devices/lab_pin.sym} 4130 640 0 0 {name=l1 sig_type=std_logic lab=vssd1}
-C {R_0_125/R_0_125.sym} 3670 790 3 0 {name=XR[15:0]}
+C {R_0_125/R_0_125.sym} 3670 940 1 0 {name=XR[15:0]}
 C {MulColROs.sym} 3940 -150 0 0 {name=x1}

@@ -1,5 +1,5 @@
 {
-	"STD_CELL_LIBRARY": "sky130_fd_pr",
+	"STD_CELL_LIBRARY": "sky130_fd_sc_hvl",
 	"INCLUDE_CONFIGS": [
 		"$LVS_ROOT/tech/$PDK/lvs_config.base.json"
 	],
@@ -12,7 +12,7 @@
 		""
 	],
 	"LVS_FLATTEN": [
-		"$UPRJ_ROOT/xschem/user_analog_project_wrapper.spice"
+		""
 	],
 	"LVS_NOFLATTEN": [
 		""
